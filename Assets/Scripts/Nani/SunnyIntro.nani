@@ -1,0 +1,138 @@
+@back Day id:Sunny
+(這裡就是晴天的區域嗎?)
+; 眼1-2+嘴1-2+立繪1(手放下)
+@char S1.S1Eye2Mou2 pos:50,-3
+@slide S1 from:50,-3 to:50,3 time:0.1
+@slide S1 from:50,3 to:50,-3 time:0.1
+S1: ！？
+你是—
+; 眼1-1+嘴1-1+立繪1(手舉起)+腮紅1-2
+@char S1.S1Eye1Mou1Blush2 pos:50,-3
+S1: 你就是新來的管理人嗎！
+啊、對—— 
+@char S1.S1Eye5Mou3Blush3Body2 pos:50,-3
+@spawn GiBaLight
+S1: 歡迎來到這裡！
+; 眼1-5+嘴1-3+立繪1(手舉起)+腮紅1-3 特效1
+@char S1.S1Eye5Mou1Blush3Body2 pos:50,-3
+S1: 我是晴天！
+; 眼1-5+嘴1-1+立繪1(手舉起)+腮紅1-3 特效1
+@despawn GiBaLight
+晴天？ 
+@hide S1
+@char S2.S2Eye1Mou1 pos:50,-3
+S2: 對，我是晴天！
+; 眼2-1+嘴2-1+立繪2+腮紅
+@char S2.S2Eye2Mou2 pos:50,-3
+@spawn Leaf pos:3,2
+S2: 負責管理太陽的晴天！
+; 眼2-2+嘴2-2+立繪2+腮紅 特效2
+@hide S2
+@char S3.S3Eye1Mou1Hand1Blush1 pos:50,-3
+S3: 因為這個區域是農村，需要好好控制太陽才能讓不同的植物生長！
+@despawn Leaf
+; 眼3-1+嘴3-1+立繪3+手3-1+腮紅3-1 特效2
+@char S3.S3Eye2Mou2Hand1 pos:50,-3
+S3: 如果沒有我的話
+; 眼3-2+嘴3-2+立繪3+手3-1
+S1: 這裡就沒辦法成為全國最大最優良的農產品供應區域。會變得跟其他區域一樣糟糕透頂。 
+糟糕透頂？ 
+@hide S3
+@char S1.S1Eye1Mou1Body2 pos:50,-3
+S1: 沒有我們管理的區域，基本上就是廢墟喔。 
+; 眼1-1+嘴1-2+立繪1(手放下)
+@char S1.S1Eye4Mou5Body2 pos:50,-3
+S1: 那些區域的天氣變化極端，完全無法居住。 
+; 眼1-4+嘴1-5+立繪1(手放下)
+@char S1.S1Eye1Mou1Blush2 pos:50,-3
+S1: 所以人類只會集中在我們管理的區域喔。 
+; 眼1-1+嘴1-1+立繪1(手舉起)+腮紅1-2
+S1: 請多多指教啦！我們要好好相處喔！
+@set S1choise1=false
+@set S1choise2=false
+@set S1choise3=false
+
+# sunnyIntrochoise
+@choice "其他天氣呢?" gosub:.another set:S1choise1=true if:S1choise1=false
+@choice "晴天的區域 " gosub:.sunnyarea set:S1choise2=true if:S1choise2=false
+@choice "晴天的暱稱 " gosub:.sunny set:S1choise3=true if:S1choise3=false
+@gosub .noask if:S1choise1&S1choise2&S1choise3=true
+@stop
+
+# another
+像你這樣管理天氣的人還有誰呢？ 
+@hide S2
+@hide S3
+@char S1.S1Eye2Mou2 pos:50,-3
+S1: 你居然不知道嗎？
+@hide S1
+@char S3.S3Eye1Mou1Hand1Blush1 pos:50,-3
+S3: 除了我以外，還有雨天、陰天、閃電跟彩虹。我們的工作都很不一樣。
+@char S3.S3Eye3Mou1Hand1Blush2 pos:50,-3
+@spawn LightCircle
+S3: 但實際狀況你直接去問他們應該比較快！他們人都很好，一定能跟你好好相處
+@despawn LightCircle
+@gosub .sunnyIntrochoise
+@stop
+
+# sunnyarea
+這裡主要是什麼農產品的產區呢？ 
+@hide S2
+@hide S3
+@char S1.S1Eye1Mou1Blush2 pos:50,-3
+S1: 所有農產品都是在這裡產出喔！
+@hide S1
+@char S2.S2Eye2Mou1 pos:50,-3
+@spawn Leaf pos:3,2
+S2: 所以才需要我控制太陽，讓各種動植物都能在這裡生存。
+@hide S2
+@char S3.S3Eye2Mou2Hand1 pos:50,-3
+S3: 全國的人類都仰賴這裡的農產品生存，如果出了什麼差錯是會鬧上饑荒的。
+@despawn Leaf
+@gosub .sunnyIntrochoise
+@stop
+
+# sunny
+晴天是你的綽號嗎？
+@hide S2
+@hide S3
+@char S1.S1Eye1Mou1Blush2 pos:50,-3
+S1: 對啊，在天氣管理局裡大家不都是這樣稱呼嗎？
+@char S1.S1Eye5Mou1Blush3Body2 pos:50,-3
+S1: 你身上也有名牌啊！給我看看！
+
+@showUI Inventory
+@addItem NamePlate
+@addItem Tape
+@addItem Bag
+
+S1: ……
+S1: 請多指教！不過我還是叫你管理人吧。
+@gosub .sunnyIntrochoise
+@stop
+
+# noask
+@hide S2
+@hide S3
+@char S1.S1Eye1Mou1Body2 pos:50,-3
+S1: 待會你會去其他區域嗎？
+是的。
+@char S1.S1Eye5Mou3Blush3Body2 pos:50,-3
+S1: 趕快去跟大家打招呼吧，大家一定很歡迎你！
+@hide S1
+@char S3.S3Eye2Mou2Hand1 pos:50,-3
+S3: 啊啊，但今天陰天、閃電跟彩虹應該去管理局開會了，現在去遇不到他們喔！ 
+@char S3.S3Eye1Mou1Hand1Blush1 pos:50,-3
+S3: 要不要先去找雨天呢？ 
+好的。 
+@hide S3
+@char S2.S2Eye2Mou1 pos:50,-3
+@spawn Leaf pos:3,2
+S2: 希望我們之後能共事愉快！
+@goto RainIntro
+@stop
+
+@spawn GiBaLight
+@spawn Leaf pos:3,2
+@spawn LightCircle
+@spawn Eye

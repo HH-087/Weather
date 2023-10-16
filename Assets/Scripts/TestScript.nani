@@ -1,0 +1,4 @@
+@showUI Inventory
+@addItem NamePlate
+@addItem Tape
+@addItem Bag

@@ -1,0 +1,209 @@
+# RainStreet
+@back Street id:Rain
+@spawn Rain params:300000,5
+@bgm HeavyRain
+@showUI StreetUI
+（天氣也太糟了吧⋯⋯） 
+（不是說有人管理的區域天氣都很好嗎⋯⋯） 
+@sfx Footsteps
+（不過這裡確實有人類居住，應該是雨天的區域沒錯。）
+（但雨天好像不在這裡？這個時間不應該出來跟人類打招呼嗎？）
+（先到處看看或詢問這裡的居民吧）
+#StreetSearch
+@hidePrinter
+@showUI StreetUI
+@set ManCounta=false
+@set ManCountb=false
+@stop
+
+#Man
+抱歉打擾了。 
+你們平常會看到雨天嗎？ 
+行人: 雨天？ 
+行人: 什麼意思？ 
+呃⋯⋯ 
+@gosub .ManC if:ManCounta&ManCountb=true
+@choice "我的意思是這種天氣很常出現嗎？" gosub:.ManA
+@choice "雨天不是你們這個區域的負責人嗎？" gosub:.ManB
+@stop 
+
+#ManA
+ManCounta=true
+行人: 幾乎每天都是這樣吧？ 
+行人: 好像從某一天開始就沒有停止下雨過了。以前頂多是毛毛雨或當天就會停的雨，像這樣下暴雨我們也是最近才看到的。 
+了解了，謝謝。
+@hidePrinter
+@stop
+
+#ManB
+ManCountb=true
+行人: ……什麼意思？ 
+行人: 我們這個區域的負責人？ 
+你們不知道嗎？
+行人: 什麼負責人啊？我們從來沒有這號人物啊？ 
+所以你們也不知道為什麼你們的天氣變這麼糟糕？
+行人: 極端氣候吧？ 
+行人: 可能就我們比較衰而已。
+……好的。
+@hidePrinter
+@stop
+
+#ManC
+行人: 說到這個⋯⋯ 
+？
+行人: 我們這裡倒是有個都市傳說……
+行人: 聽說只要在這種暴風雨的晚上走到外面，就會看到一個像鬼魂一樣的傢伙在路上行走。 
+行人: 我的朋友已經看過很多次了，但每次一靠近，它就會跟鬼魂一樣消失。
+……我比較好奇為什麼你的朋友要在暴風雨的晚上出門？ 
+行人: 這是個好問題，我也不知道。 
+@hidePrinter
+@stop 
+ 
+# NewBoard
+（這是什麼？）
+（看起來像是某種類型的天氣圖？）
+（等等⋯⋯）
+（好像有一個地方雨下得特別大⋯⋯） 
+@hidePrinter
+@stop
+
+# GoRainHouse
+雖然其他地方雨也很大，但這裡下得特別誇張。 
+如果雨天能影響這個區域的天氣，也許那裡就是他在的地方？ 
+要過去嗎？ 
+@choice "過去" gosub:.ManA
+@choice "不過去" gosub:.ManB
+
+# GoRain
+走吧。
+@gosub .RainHouseFirst
+
+# RainHouseFirst
+@back Toilet id:Rain
+@bgm Faultlines
+@showUI WeatherBallRain
+（外面似乎有交談聲⋯⋯）
+（從門縫看一下情況好了）
+@hidePrinter
+@back Gallery id:Rain
+@bgm SmallRain
+@spawn Rain params:500,10
+@char R2Unknow.R2Hand2Emo2 pos:70,-20
+@char housekeeperOutside.Rain pos:30,0
+R2Unknow: ——我不是說過不要隨便讓別人進來嗎？
+housekeeperOutside: 主人您怎麼下樓了？吵到您了嗎？
+housekeeperOutside: 老頭子我看那年輕人有點狼狽，才讓他進來處理處理再走。
+@char R2Unknow.R2Hand2Emo3 pos:70,-20
+R2Unknow: 你怎麼每次都多管閒事呢？
+@hide R2Unknow
+@char R3Unknow.R3Hand2Emo3 pos:70,-17
+R3Unknow: 趕快讓那傢伙離開這裡。
+housekeeperOutside: 主人啊，您也想想那年輕人的感受啊。
+@stopBgm SmallRain
+@despawn Rain params:30
+@hide R3Unknow
+@char R1Unknow.R1Emo2 pos:70,-83
+R1Unknow: ......
+@char R1Unknow.R1Mou2Emo3 pos:70,-83
+R1Unknow: 快讓他回去。
+@hide R1Unknow
+@hide housekeeperOutside
+@back Toilet id:Rain
+@showUI ClothUI
+ 
+（那個人⋯⋯應該就是雨天沒有錯了）
+（管家要轉身回來了，不能讓他發現我的視線。）
+（這是個好機會⋯⋯）
+@stopBgm Faultlines fade:10
+@bgm Sinister
+@hidePrinter 
+@stop
+# GetCloth
+（必須先把衣服收好。）
+@hidePrinter 
+@showUI CubiclesUI
+@stop
+# GetInCubicles
+（去隔間裡面！）
+@back Black id:Black
+……
+@hide Black
+@back Toilet id:Rain
+@char housekeeper.Rain pos:50,0
+housekeeper: 您還好嗎？
+……
+housekeeper: 您去哪裡了呢？
+@sfx Footsteps
+@hide housekeeper
+@back Black id:Black
+（管家走掉了。）
+@stopBgm Sinister fade:10
+@bgm Faultlines
+……
+（出去吧。）
+@hide Black
+@back Gallery id:Rain
+@back Stair id:Rain
+（樓梯通往兩個不同的區域⋯⋯）
+（該往哪裡走呢？）
+@choice "往沒有水漬的樓梯走" gosub:.NoWaterstains
+@choice "往有水漬的樓梯走" gosub:.Waterstains
+@stop
+# NoWaterstains
+@sfx Footsteps
+@wait 0.5
+@back Gallery id:Rain
+（感覺⋯⋯好像不太對？）
+（應該往有水漬的方向走才對。）
+（折返吧。）
+@back Stair id:Rain
+# Waterstains
+@sfx Footsteps
+@back Door id:Rain
+（這裡應該就是雨天的房間了。）
+（門似乎是特別用防水材質製作的。）
+@spawn Rain params:500,10
+@bgm SmallRain
+R2Unknow: 誰？
+@spawn ShakeCamera params:Rain,,0.08,,0.6,,true,false
+@char R2.R2Hand2Emo3 pos:50,-20
+你好我是-
+@char R2.R2Hand2Emo4 pos:50,-20
+R2: 你是管理局的人吧?
+！！
+是的。
+@char R2.R2Hand2Emo5 pos:50,-20
+R2: ……
+@char R2.R2Hand1Emo2 pos:50,-20
+R2: 我想也是。
+@hide R2
+@char R3.R3Hand2Emo3 pos:50,-16
+R3: 但我還真沒想過管理局的人做事會這麼粗魯。
+……
+我感到非常抱歉。
+作為新上任的管理人，我有必要跟每個天氣打聲招呼。
+@hide R3
+@char R1.R1Hand1Emo1Eyebrow2 pos:50,-83
+R1: ……
+既然之後要一起共事，打聲招呼就是必須的，抱歉那麼地唐突。
+@char R1.R1Hand1Emo2Mou2Eyebrow2 pos:50,-83
+@stopBgm SmallRain
+@despawn Rain params:30
+R1: ⋯⋯像這樣擅闖私人空間很失禮。
+我很抱歉，但不這樣做是見不到你的。
+@char R1.R1Hand1Emo2Eyebrow2 pos:50,-83
+R1: ……
+我只是想盡力完成我的工作，希望你能諒解。
+@spawn Rain params:500,10
+@bgm SmallRain
+@hide R1
+@char R3.R3Hand2Emo4 pos:50,-16
+R3: 嗤。
+@char R3.R3Hand2Emo3 pos:50,-16
+@stopBgm SmallRain
+@spawn Rain params:1000,10
+@bgm Rain
+R3: 是啊，管理局永遠只想著工作。
+@hide R3
+@char R1.R1Hand1Emo2Mou2Eyebrow2 pos:50,-83
+R1: 請離開吧。

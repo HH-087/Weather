@@ -1,0 +1,97 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ArmType",
+			"GroupId": "",
+			"Name": "右手切換"
+		},
+		{
+			"Id": "RightHand",
+			"GroupId": "",
+			"Name": "右手"
+		},
+		{
+			"Id": "RightHand2",
+			"GroupId": "",
+			"Name": "右手2"
+		},
+		{
+			"Id": "RightHand3",
+			"GroupId": "",
+			"Name": "右手3"
+		},
+		{
+			"Id": "LeftArm2",
+			"GroupId": "",
+			"Name": "左手2"
+		},
+		{
+			"Id": "LeftArm",
+			"GroupId": "",
+			"Name": "左手"
+		},
+		{
+			"Id": "LeftArm3",
+			"GroupId": "",
+			"Name": "左手3"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "Paramline",
+			"GroupId": "",
+			"Name": "線"
+		},
+		{
+			"Id": "Paramline2",
+			"GroupId": "",
+			"Name": "線2"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "cloud",
+			"GroupId": "",
+			"Name": "雲"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动 后发"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "陰天.psd(未找到对应图层)"
+		}
+	]
+}
