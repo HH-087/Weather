@@ -9,12 +9,22 @@
 		{
 			"Id": "EyeType",
 			"GroupId": "",
-			"Name": "EyeType"
+			"Name": "Eye"
 		},
 		{
 			"Id": "Mouthtype",
 			"GroupId": "",
-			"Name": "Mouthtype"
+			"Name": "Mouth"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param22",
+			"GroupId": "",
+			"Name": "par2"
 		},
 		{
 			"Id": "ParamHairFront",
@@ -70,14 +80,20 @@
 	"ParameterGroups": [],
 	"Parts": [
 		{
+			"Id": "Part4",
+			"Name": "晴天立繪2.psd(未找到对应图层)"
+		},
+		{
 			"Id": "Part",
 			"Name": "資料夾 1"
+		},
+		{
+			"Id": "Part2",
+			"Name": "資料夾 1"
+		},
+		{
+			"Id": "Part3",
+			"Name": "資料夾 2"
 		}
-	],
-	"CombinedParameters": [
-		[
-			"ParamHairSide",
-			"ParamHairSide2"
-		]
 	]
 }

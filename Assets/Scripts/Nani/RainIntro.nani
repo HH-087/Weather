@@ -73,6 +73,9 @@ ManCountb=true
 要過去嗎？ 
 @choice "過去" gosub:.ManA
 @choice "不過去" gosub:.ManB
+@stop
+
+
 
 # GoRain
 走吧。
@@ -207,3 +210,18 @@ R3: 是啊，管理局永遠只想著工作。
 @hide R3
 @char R1.R1Hand1Emo2Mou2Eyebrow2 pos:50,-83
 R1: 請離開吧。
+@spawn Rain params:500,10
+@despawn Rain params:30
+@hide R1
+@back House id: Rain
+
+@sfx Ringing
+？: *見過雨天和晴天了嗎？*
+玩家: 是的。
+？: *那你應該能明白現在的情況。*
+？: *——雨天已經一個月沒有回到工作崗位了。*
+？: *他管理的區域不能再這樣繼續放任天氣失控。*
+？: *管理局這段時間沒辦法跟他好好溝通，現在這是你的任務了。*
+？: *儘快讓雨天回到工作崗位。
+@back Black id:Black
+@goto 1-1

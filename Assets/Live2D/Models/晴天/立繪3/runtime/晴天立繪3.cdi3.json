@@ -22,14 +22,19 @@
 			"Name": "ShadowType"
 		},
 		{
-			"Id": "BlushType",
-			"GroupId": "",
-			"Name": "BlushType"
-		},
-		{
 			"Id": "ArmType",
 			"GroupId": "",
 			"Name": "ArmType"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "par2"
 		},
 		{
 			"Id": "ParamHairFront",

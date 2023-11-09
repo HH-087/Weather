@@ -1,0 +1,100 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Paramx",
+			"GroupId": "",
+			"Name": "x"
+		},
+		{
+			"Id": "Paramy",
+			"GroupId": "",
+			"Name": "y"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamDeco",
+			"GroupId": "",
+			"Name": "裝飾"
+		},
+		{
+			"Id": "ParamDeco2",
+			"GroupId": "",
+			"Name": "裝飾2"
+		},
+		{
+			"Id": "ParamLHand2",
+			"GroupId": "",
+			"Name": "左手2"
+		},
+		{
+			"Id": "ParamLHand",
+			"GroupId": "",
+			"Name": "左手"
+		},
+		{
+			"Id": "ParamRHand2",
+			"GroupId": "",
+			"Name": "右手"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动 后发"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "ParamHairSide2",
+			"GroupId": "",
+			"Name": "摇动 侧发2"
+		},
+		{
+			"Id": "ParamArmChange",
+			"GroupId": "",
+			"Name": "手臂切換"
+		},
+		{
+			"Id": "ParamArmChange2",
+			"GroupId": "",
+			"Name": "手臂切換左"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "資料夾 2"
+		},
+		{
+			"Id": "Part2",
+			"Name": "資料夾 1"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"Paramx",
+			"Paramy"
+		],
+		[
+			"ParamDeco",
+			"ParamDeco2"
+		],
+		[
+			"ParamHairSide",
+			"ParamHairSide2"
+		]
+	]
+}

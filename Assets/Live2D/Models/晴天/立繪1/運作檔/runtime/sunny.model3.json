@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "sunny.moc3",
+		"Textures": [
+			"sunny.4096/texture_00.png"
+		],
+		"Physics": "sunny.physics3.json",
+		"DisplayInfo": "sunny.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

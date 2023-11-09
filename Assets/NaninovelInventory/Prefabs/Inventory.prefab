@@ -1377,6 +1377,36 @@ PrefabInstance:
       propertyPath: m_IgnoreLayout
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3720888543886250690, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720888543886250690, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720888543886250690, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721074173488585424, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721074173488585424, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3721074173488585424, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3721089008905037438, guid: ae0c45c69e038b4499eeb5b00d90c939,
         type: 3}
       propertyPath: m_Color.a
@@ -1406,6 +1436,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ChildForceExpandWidth
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723606890361561518, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723606890361561518, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723606890361561518, guid: ae0c45c69e038b4499eeb5b00d90c939,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

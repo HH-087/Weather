@@ -12,8 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
   m_Name: "\u9583\u96FB-\u7ACB\u7E6A2.fadeMotionList"
   m_EditorClassIdentifier: 
-  MotionInstanceIds: 0ebeffff20a1ffff3c91ffff
+  MotionInstanceIds: 5ed9ffff62d7ffff68d0ffffc8cfffff0cc8ffff28c7ffff76afffffcca8ffff669fffff9094ffff4094ffff1287ffff7286ffff8484ffffe483ffff7c74ffffa25dffff
   CubismFadeMotionObjects:
-  - {fileID: 11400000, guid: 3f9180d5827a2ef419c34a1aeb41f35d, type: 2}
-  - {fileID: 11400000, guid: a626b332ab68ce64484ffb4609afe4a0, type: 2}
-  - {fileID: 11400000, guid: 5693dae7ead24c646b437b57879ff1a3, type: 2}
+  - {fileID: 11400000, guid: dcf1eefe6def5e146b62c0910e38abea, type: 2}
+  - {fileID: 11400000, guid: 305a6332727855d4da5787d1ba8b0ee2, type: 2}
+  - {fileID: 11400000, guid: 12a7f73e0a8106440929cc144713cef8, type: 2}
+  - {fileID: 11400000, guid: 0f49cc3d5f4be634fa131af58919c5cc, type: 2}
+  - {fileID: 11400000, guid: 41e4c904775866244a57161a763beca5, type: 2}
+  - {fileID: 11400000, guid: 320045158d8a1924db1ef4ebbfbb2d36, type: 2}
+  - {fileID: 11400000, guid: 777c53ffb8c8d5348bc3216a91ec9824, type: 2}
+  - {fileID: 11400000, guid: ac34ad1035e806d47a81b63f36ecc42e, type: 2}
+  - {fileID: 11400000, guid: ff89451f8885561438cca11058f47bbc, type: 2}
+  - {fileID: 11400000, guid: ebadf924117f53e4da14803c3b1e7dee, type: 2}
+  - {fileID: 11400000, guid: a69a29fb323e4f54fbbb20545fe57404, type: 2}
+  - {fileID: 11400000, guid: 9c448b4569f36f64b8129ff6ceea7876, type: 2}
+  - {fileID: 11400000, guid: f8cb40eb67cccf247ae5ba82ad4d7cf5, type: 2}
+  - {fileID: 11400000, guid: e6950ef8720b4ec4695c71da2d25c566, type: 2}
+  - {fileID: 11400000, guid: 887d689e6975e684d8a661b0a8306dc5, type: 2}
+  - {fileID: 11400000, guid: 7b6a18246f9e67d42ada2b38837edfa4, type: 2}
+  - {fileID: 11400000, guid: 32b17344ff5dfef4ca1e029282d54afa, type: 2}

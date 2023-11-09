@@ -1,0 +1,101 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Parameye",
+			"GroupId": "",
+			"Name": "eye"
+		},
+		{
+			"Id": "Parameyebrow",
+			"GroupId": "",
+			"Name": "eyebrow"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "ParamHairFront2",
+			"GroupId": "",
+			"Name": "前髮2"
+		},
+		{
+			"Id": "ParamX",
+			"GroupId": "",
+			"Name": "X"
+		},
+		{
+			"Id": "ParamY",
+			"GroupId": "",
+			"Name": "Y"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "ParamHairSide2",
+			"GroupId": "",
+			"Name": "側髮2"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动 后发"
+		},
+		{
+			"Id": "ParamHairBack2",
+			"GroupId": "",
+			"Name": "後髮2"
+		},
+		{
+			"Id": "Arm",
+			"GroupId": "",
+			"Name": "手"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "拉鍊"
+		},
+		{
+			"Id": "Tile",
+			"GroupId": "",
+			"Name": "TILE"
+		},
+		{
+			"Id": "Tile2",
+			"GroupId": "",
+			"Name": "Tile2"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "資料夾 3"
+		},
+		{
+			"Id": "Part6",
+			"Name": "表情"
+		}
+	]
+}

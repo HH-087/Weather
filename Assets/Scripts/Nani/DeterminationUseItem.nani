@@ -1,0 +1,10 @@
+# Determination
+@goto SunnyIntro.DeterminationGiveSunny if:Chapter=0
+
+# UseInWrongWay
+(這個物品不能在這裡使用)
+
+# UseUnbrella
+@printer Custom
+@goto 1-1.MeetRainyCon if:(Chapter="1-1")&(AllowUnbrellaUsing=true)
+@stop

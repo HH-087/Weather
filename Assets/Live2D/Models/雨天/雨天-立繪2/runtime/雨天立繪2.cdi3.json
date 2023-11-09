@@ -2,6 +2,31 @@
 	"Version": 3,
 	"Parameters": [
 		{
+			"Id": "Paramemo",
+			"GroupId": "",
+			"Name": "表情差分"
+		},
+		{
+			"Id": "ArmChange",
+			"GroupId": "",
+			"Name": "手切換"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "par3"
+		},
+		{
 			"Id": "ParamBreath",
 			"GroupId": "",
 			"Name": "呼吸"
@@ -20,11 +45,6 @@
 			"Id": "HandMove",
 			"GroupId": "",
 			"Name": "手"
-		},
-		{
-			"Id": "ArmChange",
-			"GroupId": "",
-			"Name": "手切換"
 		},
 		{
 			"Id": "ParamHairFront",
@@ -120,11 +140,6 @@
 			"Id": "coat2",
 			"GroupId": "",
 			"Name": "披風1"
-		},
-		{
-			"Id": "Paramemo",
-			"GroupId": "",
-			"Name": "表情差分"
 		}
 	],
 	"ParameterGroups": [],
@@ -134,18 +149,12 @@
 			"Name": "rain 的複製"
 		},
 		{
+			"Id": "Part5",
+			"Name": "表情"
+		},
+		{
 			"Id": "Part2",
 			"Name": "hair_back 的複製"
 		}
-	],
-	"CombinedParameters": [
-		[
-			"ParamHairBack3",
-			"ParamHairBack4"
-		],
-		[
-			"deco",
-			"deco2"
-		]
 	]
 }

@@ -1,0 +1,117 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "bodyType",
+			"GroupId": "",
+			"Name": "body"
+		},
+		{
+			"Id": "EyebrowType",
+			"GroupId": "",
+			"Name": "Eyebrow"
+		},
+		{
+			"Id": "EyeType",
+			"GroupId": "",
+			"Name": "Eye"
+		},
+		{
+			"Id": "MouthType",
+			"GroupId": "",
+			"Name": "Mouth"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "",
+			"Name": "腮紅"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param22",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
+			"Id": "Param23",
+			"GroupId": "",
+			"Name": "par3"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "摇动 侧发2"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "搖動 前髮"
+		},
+		{
+			"Id": "FrontHair_LR",
+			"GroupId": "",
+			"Name": "FrontHair_LR"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "",
+			"Name": "arm"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "smallHair"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "後髮"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "deco"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part8",
+			"Name": "晴天立繪.psd"
+		},
+		{
+			"Id": "Part6",
+			"Name": "資料夾 1 的複製"
+		},
+		{
+			"Id": "sunny",
+			"Name": "sunny"
+		},
+		{
+			"Id": "hair",
+			"Name": "hair"
+		},
+		{
+			"Id": "emo2",
+			"Name": "emo"
+		},
+		{
+			"Id": "emo",
+			"Name": "emo"
+		}
+	]
+}

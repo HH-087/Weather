@@ -4,7 +4,7 @@
 		"PhysicsSettingCount": 1,
 		"TotalInputCount": 1,
 		"TotalOutputCount": 9,
-		"VertexCount": 3,
+		"VertexCount": 4,
 		"EffectiveForces": {
 			"Gravity": {
 				"X": 0,
@@ -76,7 +76,7 @@
 						"Id": "ParamHairSide2"
 					},
 					"VertexIndex": 2,
-					"Scale": 0.915,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -109,7 +109,7 @@
 						"Id": "Param3"
 					},
 					"VertexIndex": 2,
-					"Scale": 0.915,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -120,7 +120,7 @@
 						"Id": "Param4"
 					},
 					"VertexIndex": 1,
-					"Scale": 0.599,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -131,7 +131,7 @@
 						"Id": "Param5"
 					},
 					"VertexIndex": 2,
-					"Scale": 0.915,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -151,22 +151,32 @@
 				{
 					"Position": {
 						"X": 0,
-						"Y": 8
+						"Y": 3.3
 					},
-					"Mobility": 0.95,
-					"Delay": 0.78,
-					"Acceleration": 1.5,
-					"Radius": 8
+					"Mobility": 0.01,
+					"Delay": 0.7,
+					"Acceleration": 0.96,
+					"Radius": 3.3
 				},
 				{
 					"Position": {
 						"X": 0,
-						"Y": 13
+						"Y": 6.3
 					},
-					"Mobility": 0.67,
-					"Delay": 0.52,
-					"Acceleration": 0.49,
-					"Radius": 5
+					"Mobility": 0.01,
+					"Delay": 0.64,
+					"Acceleration": 0.54,
+					"Radius": 3
+				},
+				{
+					"Position": {
+						"X": 0,
+						"Y": 9.3
+					},
+					"Mobility": 0.01,
+					"Delay": 0.64,
+					"Acceleration": 0.5,
+					"Radius": 3
 				}
 			],
 			"Normalization": {

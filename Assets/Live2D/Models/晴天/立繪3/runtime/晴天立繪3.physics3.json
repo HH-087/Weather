@@ -4,7 +4,7 @@
 		"PhysicsSettingCount": 1,
 		"TotalInputCount": 1,
 		"TotalOutputCount": 10,
-		"VertexCount": 3,
+		"VertexCount": 4,
 		"EffectiveForces": {
 			"Gravity": {
 				"X": 0,
@@ -43,7 +43,7 @@
 						"Id": "Hand"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.328,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -54,7 +54,7 @@
 						"Id": "ParamHairFront"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.781,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -65,7 +65,7 @@
 						"Id": "ParamHairFront2"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.328,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -76,7 +76,7 @@
 						"Id": "Param"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.328,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -87,7 +87,7 @@
 						"Id": "flower"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.781,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -98,7 +98,7 @@
 						"Id": "ParamHairSide"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.781,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -109,7 +109,7 @@
 						"Id": "ParamHairSide2"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.328,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -120,7 +120,7 @@
 						"Id": "ParamHairBack"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.328,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -131,7 +131,7 @@
 						"Id": "Param2"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.328,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -142,7 +142,7 @@
 						"Id": "arm"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.781,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -162,22 +162,32 @@
 				{
 					"Position": {
 						"X": 0,
-						"Y": 7
+						"Y": 3.3
 					},
-					"Mobility": 0.8,
-					"Delay": 1,
-					"Acceleration": 0.4,
-					"Radius": 7
+					"Mobility": 0.01,
+					"Delay": 0.86,
+					"Acceleration": 0.7,
+					"Radius": 3.3
 				},
 				{
 					"Position": {
 						"X": 0,
-						"Y": 12
+						"Y": 6.3
 					},
-					"Mobility": 0.73,
-					"Delay": 0.75,
-					"Acceleration": 0.38,
-					"Radius": 5
+					"Mobility": 0.01,
+					"Delay": 0.72,
+					"Acceleration": 0.6,
+					"Radius": 3
+				},
+				{
+					"Position": {
+						"X": 0,
+						"Y": 9.3
+					},
+					"Mobility": 0.01,
+					"Delay": 0.64,
+					"Acceleration": 0.5,
+					"Radius": 3
 				}
 			],
 			"Normalization": {
@@ -187,9 +197,9 @@
 					"Maximum": 10
 				},
 				"Angle": {
-					"Minimum": -30,
+					"Minimum": -40,
 					"Default": 0,
-					"Maximum": 30
+					"Maximum": 40
 				}
 			}
 		}

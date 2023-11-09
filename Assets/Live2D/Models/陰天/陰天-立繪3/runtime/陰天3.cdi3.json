@@ -2,6 +2,41 @@
 	"Version": 3,
 	"Parameters": [
 		{
+			"Id": "ParamHandChange",
+			"GroupId": "",
+			"Name": "手切換"
+		},
+		{
+			"Id": "ParamEye",
+			"GroupId": "",
+			"Name": "Eye"
+		},
+		{
+			"Id": "ParamMouth",
+			"GroupId": "",
+			"Name": "mouth"
+		},
+		{
+			"Id": "ParamEyebrow",
+			"GroupId": "",
+			"Name": "eyebrow"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
 			"Id": "ParamDeco",
 			"GroupId": "",
 			"Name": "裝飾"
@@ -22,11 +57,6 @@
 			"Name": "角度 Y"
 		},
 		{
-			"Id": "ParamBreath",
-			"GroupId": "",
-			"Name": "呼吸"
-		},
-		{
 			"Id": "ParamHairFront",
 			"GroupId": "",
 			"Name": "摇动 前发"
@@ -45,13 +75,13 @@
 			"Id": "ParamHairBack",
 			"GroupId": "",
 			"Name": "摇动 后发"
-		},
-		{
-			"Id": "ParamHandChange",
-			"GroupId": "",
-			"Name": "手切換"
 		}
 	],
 	"ParameterGroups": [],
-	"Parts": []
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "資料夾 1"
+		}
+	]
 }

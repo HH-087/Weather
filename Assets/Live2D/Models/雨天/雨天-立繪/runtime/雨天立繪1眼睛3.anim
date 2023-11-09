@@ -23,7 +23,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.8
+        value: 2
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -32,7 +32,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.033
-        value: 1.8
+        value: 2
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -92,7 +92,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.8
+        value: 2
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -101,7 +101,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.033
-        value: 1.8
+        value: 2
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -125,5 +125,5 @@ AnimationClip:
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: -26112
+    intParameter: -25130
     messageOptions: 1

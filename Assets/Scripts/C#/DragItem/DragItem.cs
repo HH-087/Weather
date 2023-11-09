@@ -3,44 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
-    Transform group;
-    GameObject father_gameObject;
     Vector3 screenpos;
     Vector3 worldpos;
     Vector3 pos;
-    void Start()
-    {
-        father_gameObject = GameObject.Find("Inventory");
-    }
+    private Vector2 Drop;
+    private string CheckName;
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         pos = transform.position;
-        //transform.SetParent(transform.root);
-        //gameObject.transform.parent = father_gameObject.transform;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        //transform.position = Input.mousePosition;
         transform.position = worldpos;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        //transform.SetParent(group);
         transform.position = pos;
     }
-
+    public void OnDrop(PointerEventData eventData)
+    {
+        Drop = eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition;
+        Debug.Log(Drop);
+        CheckName = eventData.pointerDrag.name;
+        Debug.Log(CheckName);
+        PlayerPrefs.SetString("CheckName", CheckName);
+    }
 
     void Update()
     {
-        //print(this.transform.position);
         screenpos = Input.mousePosition;
         screenpos.z = Camera.main.nearClipPlane + 1;
         worldpos = Camera.main.ScreenToWorldPoint(screenpos);
-        
-        //print(Input.mousePosition);
+        PlayerPrefs.SetFloat("Drop_x", Drop.x);
+        PlayerPrefs.SetFloat("Drop_y", Drop.y);
     }
 }

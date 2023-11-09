@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38acf29c06b5d7e41aecac8361cc7e57, type: 3}
   m_Name: ChoiceHandlersConfiguration
   m_EditorClassIdentifier: 
+  DefaultDuration: 0.35
   DefaultEasing: 0
   AutoShowOnModify: 1
   DefaultHandlerId: ButtonList
+  ChoiceButtonLoader:
+    PathPrefix: 
+    ProviderTypes:
+    - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   DefaultMetadata:
     Implementation: Naninovel.UIChoiceHandler, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -27,11 +35,12 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
     guid: 72559f81-e631-4e13-832d-670b37d32bab
     customData:
-      id: 0
+      rid: -2
   Metadata:
     ids:
     - ButtonList
     - ButtonArea
+    - Pump
     metas:
     - Implementation: Naninovel.UIChoiceHandler, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -44,7 +53,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       guid: 9f687dc8-7841-47ab-b8d8-26ab64eeeebc
       customData:
-        id: 0
+        rid: -2
     - Implementation: Naninovel.UIChoiceHandler, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Loader:
@@ -56,8 +65,21 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       guid: d248a9ca-9d66-4e72-923b-8426aa785a64
       customData:
-        id: 0
+        rid: -2
+    - Implementation: Naninovel.UIChoiceHandler, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: ChoiceHandlers
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 2a6d9f36-5bf5-4469-ac00-3a67f92179a1
+      customData:
+        rid: -2
   references:
-    version: 1
-    00000000:
+    version: 2
+    RefIds:
+    - rid: -2
       type: {class: , ns: , asm: }

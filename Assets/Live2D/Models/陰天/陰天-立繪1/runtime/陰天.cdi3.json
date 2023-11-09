@@ -1,0 +1,124 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Parameye",
+			"GroupId": "",
+			"Name": "eye"
+		},
+		{
+			"Id": "Parammouth",
+			"GroupId": "",
+			"Name": "mouth"
+		},
+		{
+			"Id": "Parameyebrow",
+			"GroupId": "",
+			"Name": "eyebrow"
+		},
+		{
+			"Id": "ArmType",
+			"GroupId": "",
+			"Name": "右手切換"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "par3"
+		},
+		{
+			"Id": "RightHand3",
+			"GroupId": "",
+			"Name": "右手1"
+		},
+		{
+			"Id": "RightHand",
+			"GroupId": "",
+			"Name": "右手2"
+		},
+		{
+			"Id": "RightHand2",
+			"GroupId": "",
+			"Name": "右手3"
+		},
+		{
+			"Id": "LeftArm",
+			"GroupId": "",
+			"Name": "左手"
+		},
+		{
+			"Id": "LeftArm2",
+			"GroupId": "",
+			"Name": "左手2"
+		},
+		{
+			"Id": "LeftArm3",
+			"GroupId": "",
+			"Name": "左手3"
+		},
+		{
+			"Id": "Paramline",
+			"GroupId": "",
+			"Name": "線"
+		},
+		{
+			"Id": "Paramline2",
+			"GroupId": "",
+			"Name": "線2"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "cloud",
+			"GroupId": "",
+			"Name": "雲"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动 后发"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part4",
+			"Name": "陰天立繪.psd(未找到对应图层)"
+		},
+		{
+			"Id": "Part3",
+			"Name": "陰天立繪.psd(未找到对应图层)"
+		},
+		{
+			"Id": "Part2",
+			"Name": "資料夾 1"
+		},
+		{
+			"Id": "Part",
+			"Name": "資料夾 1"
+		}
+	]
+}

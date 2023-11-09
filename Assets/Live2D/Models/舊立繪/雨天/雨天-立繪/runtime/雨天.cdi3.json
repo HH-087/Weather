@@ -1,0 +1,214 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "ParamHairSide2",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 侧发1"
+		},
+		{
+			"Id": "ParamHairSide22",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 侧发2"
+		},
+		{
+			"Id": "ParamHairSide23",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 侧发2-1"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 后发"
+		},
+		{
+			"Id": "ParamHairBack2",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 后发1"
+		},
+		{
+			"Id": "ParamHairBack3",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 后发2"
+		},
+		{
+			"Id": "ParamHairBack5",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 后发3"
+		},
+		{
+			"Id": "ParamHairBack6",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 后发4"
+		},
+		{
+			"Id": "ParamHairBack4",
+			"GroupId": "ParamGroup",
+			"Name": "摇动 后发5"
+		},
+		{
+			"Id": "coatmove",
+			"GroupId": "ParamGroup",
+			"Name": "披風"
+		},
+		{
+			"Id": "coatmove2",
+			"GroupId": "ParamGroup",
+			"Name": "披風1"
+		},
+		{
+			"Id": "armmove",
+			"GroupId": "ParamGroup",
+			"Name": "手臂"
+		},
+		{
+			"Id": "LINE",
+			"GroupId": "ParamGroup",
+			"Name": "線"
+		},
+		{
+			"Id": "deco",
+			"GroupId": "ParamGroup",
+			"Name": "流蘇"
+		},
+		{
+			"Id": "deco2",
+			"GroupId": "ParamGroup",
+			"Name": "流蘇1"
+		},
+		{
+			"Id": "stone11",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石大"
+		},
+		{
+			"Id": "stone",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石1"
+		},
+		{
+			"Id": "stone2",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石2"
+		},
+		{
+			"Id": "stone3",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石3"
+		},
+		{
+			"Id": "stone4",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石4"
+		},
+		{
+			"Id": "stone5",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石5"
+		},
+		{
+			"Id": "stone6",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石6"
+		},
+		{
+			"Id": "stone7",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石7"
+		},
+		{
+			"Id": "stone8",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石8"
+		},
+		{
+			"Id": "stone9",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石9"
+		},
+		{
+			"Id": "stone10",
+			"GroupId": "ParamGroup2",
+			"Name": "寶石10"
+		},
+		{
+			"Id": "ArmChange",
+			"GroupId": "",
+			"Name": "手臂切換"
+		},
+		{
+			"Id": "Parammouth",
+			"GroupId": "",
+			"Name": "嘴巴切換"
+		},
+		{
+			"Id": "eyebrow",
+			"GroupId": "",
+			"Name": "眉毛"
+		},
+		{
+			"Id": "Paramemo",
+			"GroupId": "",
+			"Name": "表情"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "Folder 1"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "Folder 2"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "資料夾 1 的複製"
+		},
+		{
+			"Id": "Part2",
+			"Name": "rain 的複製"
+		},
+		{
+			"Id": "Part3",
+			"Name": "rain 的複製 2"
+		},
+		{
+			"Id": "Part4",
+			"Name": "hair_front 的複製"
+		},
+		{
+			"Id": "Part12",
+			"Name": "資料夾 1"
+		},
+		{
+			"Id": "Part5",
+			"Name": "hair_back 的複製 2"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamHairSide",
+			"ParamHairSide2"
+		]
+	]
+}

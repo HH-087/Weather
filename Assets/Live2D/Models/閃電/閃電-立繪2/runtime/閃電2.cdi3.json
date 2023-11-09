@@ -2,19 +2,44 @@
 	"Version": 3,
 	"Parameters": [
 		{
-			"Id": "Tile2",
+			"Id": "Zipper",
 			"GroupId": "",
-			"Name": "Tile2"
+			"Name": "拉開拉鍊"
 		},
 		{
-			"Id": "Tile",
+			"Id": "ParamEye",
 			"GroupId": "",
-			"Name": "TILE"
+			"Name": "eye"
+		},
+		{
+			"Id": "ParamMouth",
+			"GroupId": "",
+			"Name": "Mouth"
+		},
+		{
+			"Id": "Paramsweat",
+			"GroupId": "",
+			"Name": "sweat"
+		},
+		{
+			"Id": "ParamEyebrow",
+			"GroupId": "",
+			"Name": "eyebrow"
 		},
 		{
 			"Id": "ParamBreath",
 			"GroupId": "",
 			"Name": "呼吸"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par2"
 		},
 		{
 			"Id": "ParamHairFront",
@@ -57,9 +82,14 @@
 			"Name": "摇动 后发"
 		},
 		{
-			"Id": "Zipper",
+			"Id": "Tile",
 			"GroupId": "",
-			"Name": "拉開拉鍊"
+			"Name": "TILE"
+		},
+		{
+			"Id": "Tile2",
+			"GroupId": "",
+			"Name": "Tile2"
 		}
 	],
 	"ParameterGroups": [],
@@ -70,6 +100,10 @@
 		},
 		{
 			"Id": "Part2",
+			"Name": "資料夾 2"
+		},
+		{
+			"Id": "Part4",
 			"Name": "資料夾 2"
 		}
 	]

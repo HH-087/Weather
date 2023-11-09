@@ -2,9 +2,44 @@
 	"Version": 3,
 	"Parameters": [
 		{
+			"Id": "ArmChange",
+			"GroupId": "",
+			"Name": "手臂切換"
+		},
+		{
+			"Id": "Parammouth",
+			"GroupId": "",
+			"Name": "嘴巴切換"
+		},
+		{
+			"Id": "eyebrow",
+			"GroupId": "",
+			"Name": "眉毛"
+		},
+		{
+			"Id": "Paramemo",
+			"GroupId": "",
+			"Name": "表情"
+		},
+		{
 			"Id": "ParamBreath",
 			"GroupId": "",
 			"Name": "呼吸"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "par3"
 		},
 		{
 			"Id": "ParamHairFront",
@@ -145,26 +180,6 @@
 			"Id": "stone10",
 			"GroupId": "ParamGroup2",
 			"Name": "寶石10"
-		},
-		{
-			"Id": "ArmChange",
-			"GroupId": "",
-			"Name": "手臂切換"
-		},
-		{
-			"Id": "Parammouth",
-			"GroupId": "",
-			"Name": "嘴巴切換"
-		},
-		{
-			"Id": "eyebrow",
-			"GroupId": "",
-			"Name": "眉毛"
-		},
-		{
-			"Id": "Paramemo",
-			"GroupId": "",
-			"Name": "表情"
 		}
 	],
 	"ParameterGroups": [
@@ -203,12 +218,10 @@
 		{
 			"Id": "Part5",
 			"Name": "hair_back 的複製 2"
+		},
+		{
+			"Id": "Part13",
+			"Name": "資料夾 1"
 		}
-	],
-	"CombinedParameters": [
-		[
-			"ParamHairSide",
-			"ParamHairSide2"
-		]
 	]
 }

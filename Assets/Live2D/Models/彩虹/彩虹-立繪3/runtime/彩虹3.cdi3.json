@@ -1,0 +1,100 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamArmChange",
+			"GroupId": "",
+			"Name": "手切換"
+		},
+		{
+			"Id": "Parammouth",
+			"GroupId": "",
+			"Name": "mouth"
+		},
+		{
+			"Id": "Parameye",
+			"GroupId": "",
+			"Name": "eye"
+		},
+		{
+			"Id": "Parameyebrow",
+			"GroupId": "",
+			"Name": "eyebrow"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "par3"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "ParamHairSide2",
+			"GroupId": "",
+			"Name": "摇动 侧发2"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动 后发"
+		},
+		{
+			"Id": "ParamHairBack2",
+			"GroupId": "",
+			"Name": "摇动 后发2"
+		},
+		{
+			"Id": "Paramx",
+			"GroupId": "",
+			"Name": "x"
+		},
+		{
+			"Id": "Paramy",
+			"GroupId": "",
+			"Name": "y"
+		},
+		{
+			"Id": "Paramarm",
+			"GroupId": "",
+			"Name": "手"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "資料夾 1"
+		},
+		{
+			"Id": "Part2",
+			"Name": "前髮"
+		},
+		{
+			"Id": "Part5",
+			"Name": "資料夾 2"
+		}
+	]
+}

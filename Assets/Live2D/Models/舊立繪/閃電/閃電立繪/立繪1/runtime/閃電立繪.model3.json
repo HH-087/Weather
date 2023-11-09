@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "閃電立繪.moc3",
+		"Textures": [
+			"閃電立繪.4096/texture_00.png"
+		],
+		"Physics": "閃電立繪.physics3.json",
+		"DisplayInfo": "閃電立繪.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

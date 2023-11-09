@@ -12,10 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
   m_Name: "\u5F69\u8679-\u7ACB\u7E6A.fadeMotionList"
   m_EditorClassIdentifier: 
-  MotionInstanceIds: 72a0ffff769bffff4e9bffffd69affff8c91ffff
+  MotionInstanceIds: fee1ffff50daffffacc8ffff34c8ffff18b8fffff4a8ffffee9effff269effffb894fffff292ffff6c92ffff1c92ffff3285ffff0e83ffff2c74ffff6473ffffca5dffffcc56ffff
   CubismFadeMotionObjects:
-  - {fileID: 11400000, guid: 07064c2cd80543942a1afc2b4b3560c2, type: 2}
-  - {fileID: 11400000, guid: 44ec9caa178318144b13672a60171f4c, type: 2}
-  - {fileID: 11400000, guid: 0ab255ae54bf19043acac6453ba1a9c8, type: 2}
-  - {fileID: 11400000, guid: e35389c45f904dc499cee42f08433d0b, type: 2}
-  - {fileID: 11400000, guid: 0d481929c4081a7478c933cb10631b39, type: 2}
+  - {fileID: 11400000, guid: 55fb8ebc11691ee41898d69bba985d10, type: 2}
+  - {fileID: 11400000, guid: 8abca9485769582488b1ded4fac11dd4, type: 2}
+  - {fileID: 11400000, guid: 73194367672287441afd00044a22bde0, type: 2}
+  - {fileID: 11400000, guid: cbe7bda9ebb22034398ce13694281c15, type: 2}
+  - {fileID: 11400000, guid: 368e541249e701146b1cd23bd404aa52, type: 2}
+  - {fileID: 11400000, guid: e96b5c0a08303314f89232abe61b7955, type: 2}
+  - {fileID: 11400000, guid: db1cbd5b381b2de44b7df9f8b982ade3, type: 2}
+  - {fileID: 11400000, guid: 8e849553617430b46840a245419dd083, type: 2}
+  - {fileID: 11400000, guid: f9bf5184efcb09446b592bacf754169f, type: 2}
+  - {fileID: 11400000, guid: ec8f206843e000a40b2f5d32a0b78566, type: 2}
+  - {fileID: 11400000, guid: b2891b2cd6cdf2e43880177e6eccce61, type: 2}
+  - {fileID: 11400000, guid: db99501ba7b33384e87e8e1d3351a429, type: 2}
+  - {fileID: 11400000, guid: 7963c574c4495be4d8af386441dc7895, type: 2}
+  - {fileID: 11400000, guid: f2a7a19edf711984f9d39fc45db76ddf, type: 2}
+  - {fileID: 11400000, guid: 434b8c81b68b09d4c90458e01cbd8393, type: 2}
+  - {fileID: 11400000, guid: f4ab0f4075a64be45a4abd7ef2088cc7, type: 2}
+  - {fileID: 11400000, guid: b5387500e28cd554b82373881aeb2aa7, type: 2}
+  - {fileID: 11400000, guid: 1edf9bdca23724846a0b57b40807b73f, type: 2}

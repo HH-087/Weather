@@ -1,0 +1,317 @@
+#Phone
+@back Home id:Image
+@char NPC.2 pos:50,0
+; 仍在管理人家中
+?: 過去閃電很少發生暴走的情況。
+?: 閃電似乎很重視當地居民，所以不太會產生這種破壞行為。
+這次的情況？
+?: 不確定，但閃電區域從昨天開始發電就斷斷續續了。
+昨天？
+（昨天閃電——）
+？: 您還是親自去現場看吧。
+好的。
+@hide NPC
+@stopBgm Home
+
+#CheckArea
+@back Building id:Image
+@Bgm LightningUnstable
+; switch to lightning
+（電力確實變得不穩定。）
+（不過還不至於到影響很大的程度，頂多是微微的閃爍而已。）
+……
+（沒有任何人。）
+（發生了什麼事？）
+@back Factory id:Image
+; switch to factory
+（看來這裡是被破壞的源頭。）
+（初步看的話，被破壞的應該有通訊系統、供電裝置、偵測器……）
+（蓄意的集中跟避開了某些地方……）
+@char NPC.2 pos:50,0
+？: 管理人！
+？: 我從管理局拿來了一些您可能會需要的東西。
+？: 您能解決問題嗎？還是需要管理局派人協助？
+
+@choice “可以自己解決” gosub:.OnMyOwn
+@choice “派人協助” gosub:.Request
+@stop
+
+# OnMyOwn
+我應該可以自己解決掉。
+？: 好，那就麻煩您了。
+@hide NPC
+（如果閃電在一旁觀察的話，帶進管理局的人就不好了。）
+（我需要留跟他單獨談談的機會。）
+@gosub .Check
+@stop
+
+# Request
+等這裡處理得差不多之後再請你們過來確認一下。
+？: 好的。
+@hide NPC
+@set LightningLike-=1
+@gosub .Check
+
+
+# Check
+（從通訊系統開始檢查吧。）
+@back C1-2Pic1 id:Image
+; switch to big pic
+（最核心的地方被破壞掉了。）
+（其次還有面板的些微故障跟電線連接處。）
+@back C1-2Pic2 id:Image
+; switch to big pic2
+（供電裝置的部分，只有朝向管理局的輸送裝置被破壞了。）
+（但供電裝置對管理局的影響應該不大，閃電區域的供電還是以自己區域為升為主。）
+@back C1-2Pic3 id:Image
+; switch to big pic3
+（偵測器離這些裝置有一段距離，但仍然被破壞了。）
+（應該是偵測器被破壞，管理局才會馬上發現吧。）
+@back C1-2Pic4 id:Image
+; switch to big pic4
+（至於其他部分，都算是被波及到的。）
+（目測只有電線被損毀，先從這裡開始修吧。）
+
+@back C1-2BrokenArea id:Image
+; back to the factory
+@set Taketool1=false
+@set Taketool2=false
+#Choice1
+@hidePrinter
+@choice handler:ButtonArea button:MapButtons/ToolBox pos:650,-370 goto:.TakeTool1 if:Taketool1=false
+@choice handler:ButtonArea button:MapButtons/Broken pos:550,0 goto:.BrokenPlace1
+@choice handler:ButtonArea button:MapButtons/Other pos:-300,0 goto:.Other1
+@stop
+
+# TakeTool1
+（工具箱的東西還真多⋯⋯）
+（先拿幾個重要的東西吧。）
+（這張表是？）
+（算了先拿著吧。）
+@addItem ElectricalTape
+@addItem Gloves
+@addItem Wire
+@hidePrinter
+@set Taketool1=true
+@gosub .Choice1
+@stop
+
+#BrokenPlace1
+（損壞的區域看起來應該不到需要焊接的程度。）
+（或許用膠帶補一補就可以重新接通了。）
+（主要是⋯⋯需要重新連接一下。）
+@gosub .1-2Puzzle1 if:ItemExist("Gloves")
+@gosub .HavenotTool
+@stop
+
+#HavenotTool
+(我還沒有拿工具，要先拿工具才能修理)
+@hidePrinter
+@gosub .Choice1
+@stop
+
+#Other1
+（先專心解決電線的問題吧。）
+@gosub .Choice1
+@hidePrinter
+
+
+#1-2Puzzle1
+
+(**這邊原本有戴手套以及纏電線的小解謎**)
+(**但目前使用道具的系統有小BUG**)
+(**所以先跳到接板子的部分**)
+
+@showUI 1-2Wire
+（我記得剛剛在工具箱拿到的紙上，有類似圖案的對照表。）
+@hidePrinter
+@stop
+
+#FixedPlace1
+@back C1-2Pic4Fixed id:Image
+@hideUI 1-2Wire
+（應該修好了。）
+（這表單應該用不到了，放回工具箱吧。）
+（目前閃電區域的電力不穩定問題暫時解決。）
+（接下來確認偵測器吧。）
+@back C1-2Pic3 id:Image
+（偵測器被破壞得非常徹底呢。）
+（很像是在屍體上面多踹幾腳的感覺。）
+@choice handler:ButtonArea button:MapButtons/Other pos:0,0 goto:.BrokenPlace2
+@hidePrinter
+@stop
+
+#Taketool2
+（偵測器直接換新的就好了。）
+@addItem Watcher
+@hidePrinter
+
+#BrokenPlace2
+（偵測器直接換新的就好了。）
+（大概修正一下就可以了。）
+@gosub .1-2Puzzle2 if:ItemExist("Gloves")
+@gosub .HavenotTool2
+@stop
+
+#HavenotTool2
+(我還沒有拿偵測器，要先拿工具才能修理)
+@hidePrinter
+@choice handler:ButtonArea button:MapButtons/ToolBox pos:-300,-300 goto:.TakeTool2 if:Taketool2=false
+@choice handler:ButtonArea button:MapButtons/Broken pos:-300,-200 goto:.BrokenPlace2
+@choice handler:ButtonArea button:MapButtons/Other pos:-300,-100 goto:.Other2
+@stop
+
+#Other2
+（先專心解決偵測器的問題吧。）
+@hidePrinter
+
+#1-2Puzzle2
+@showUI 1-2Rotate
+@hidePrinter
+@stop
+
+#FixedPlace2
+; stay in pic 3
+@back C1-2Pic3Fixed id:Image
+@hideUI 1-2Rotate
+（偵測器的部分處理完了。）
+@back Factory id:Image
+@sfx Ringing
+; ringing
+喂？
+@char NPC.2 pos:50,0
+？: 管理局的人正在前往的路上了。
+？！
+？: 我知道您剛剛的指令是結束後再過來，但偵測器恢復正常之後管理局的人就自行前來了。
+@hide NPC
+; bang!
+@char NPC.1 pos:50,3
+@slide NPC from:50,0 to:50,3 time:0.1
+@slide NPC from:50,3 to:50,0 time:0.1
+？: 這個區域的天氣在哪裡！
+@choice “我不知道。” gosub:.Leave
+@choice “這是我的權限。” gosub:.Chat
+@stop
+
+#Leave
+我來到現場後並沒有看見閃電。
+？: 其他人去找人！
+？: 你可以回去了。
+是。
+@hide NPC
+; 閃電厭惡flag增加3
+@gosub .FindLightning
+@stop
+#Chat
+不好意思，這裡由我處理可以嗎？
+？: 管理人先生，您的處理速度太慢了。
+？: 您不是修理專業的人員吧？沒必要自己解決問題。
+直接與天氣溝通是我的工作。
+你們要修理就去吧，我去找人。
+？: ……
+僭越職權對你們來說沒有好處。
+？: ……
+？: 那就這樣吧。
+@hide NPC
+; 人消失
+
+# FindLightning
+（找找看閃電在哪裡吧。）
+; bang!
+（什麼聲音！）
+; 閃電出現
+@char L1.Eye1Eyebrow3 pos:50,-58
+閃電: ……
+@hide L1
+@char L2.Eye2Mou1Eyebrow1 pos:50,-45
+閃電: 過來。
+@stopBgm LightningUnstable
+@back Alley id:Image
+@Bgm LightningAlley
+; 轉換場景到後巷
+@hide L2
+@char L3.Eye5Mou1Eyebrow2Body4 pos:50,-34
+這裡是？
+@char L3.Eye3Mou1Eyebrow2Body4 pos:50,-34
+閃電: 為什麼把管理局的人帶來？
+你如果原本就在旁邊的話應該知道我沒有這樣做。
+@hide L3
+@char L2.Eye2Mou1Eyebrow1 pos:50,-45
+閃電: ……
+@choice “為什麼要破壞系統？” gosub:.ChatA
+@choice “你的行為影響到區域跟管理局了。” gosub:.ChatB
+@choice “你對管理局有什麼不滿嗎？” gosub:.ChatC
+@stop
+
+#ChatA
+為什麼要破壞系統？
+@char L2.Eye4Mou1Eyebrow1 pos:50,-45
+閃電: ……
+這樣做對你沒好處吧？
+昨天為什麼又不見人呢？明明沒有在工作吧？
+@char L2.Eye5Mou1Eyebrow1 pos:50,-45
+閃電: ……
+@hide L2
+@char L3.Eye4Mou1Eyebrow2Body4 pos:50,-34
+閃電: 我就是討厭你們這種地方。
+討不討厭是其他事，你不應該這樣對待你的工作。
+@hide L3
+@char L1.Eye1Eyebrow3 pos:50,-58
+閃電: 我怎麼對待我的工作你又知道了？
+@hide L1
+@char L3.Eye1Mou1Eyebrow2Body3 pos: 50,-34
+閃電: 你應該沒有愚蠢到連這裡的區域沒有受影響都沒發現吧？
+……
+@hide L3
+@char L2.Eye5Mou1Eyebrow1 pos:50,-45
+閃電: 如果你想當一個適任的管理人的話，就去跟居民說說話吧。
+@char L2.Eye3Mou1Eyebrow1 pos:50,-45
+閃電: 了解在你管轄之下的人在想什麼。
+; 閃電消失
+@stop
+
+#ChatB
+你的行為影響到你的區域跟管理局了。
+@char L2.Eye2Mou1Eyebrow1 pos:50,-45
+閃電: ……
+@char L2.Eye4Mou1Eyebrow1 pos:50,-45
+閃電: 看你那麼斬釘截鐵，那我問問你，我影響到什麼了？
+@hide L2
+@char L1.Eye1Eyebrow3 pos:50,-58
+閃電: 我的區域？你真的有認真確認這裡發生什麼事嗎？
+@hide L1
+@char L3.Eye1Mou1Eyebrow1Body2 pos:50,-34
+閃電: 這裡有停電嗎？科技有停擺嗎？訊號有被切斷嗎？
+@char L3.Eye4Mou1Eyebrow2Body2 pos:50,-34
+閃電: 有啦，我的確切斷了對管理局的訊號。
+@hide L3
+@char L2.Eye4Mou1Eyebrow4 pos:50,-45
+閃電: 你們的世界果然就只有管理局而已。
+……
+; 閃電消失
+@stop
+
+#ChatC
+你對管理局有什麼不滿嗎？
+@char L2.Eye1Mou1Eyebrow2 pos:50,-45
+閃電: 什麼？
+我的意思是，為什麼你的所有行動都針對管理局呢？
+@char L2.Eye3Mou1Eyebrow1 pos:50,-45
+閃電: ……
+你只破壞了往管理局的供電裝置。
+雖然波及到了旁邊的電線，導致區域電力稍微不穩定，但卻蓄意破壞了離控制台很遠的偵測器。
+——你故意想要讓這裡的破壞行動被發現對吧。
+@hide L2
+@char L1.Eye4Eyebrow1 pos:50,-58
+閃電: ……
+我不知道你的目的是什麼。是復仇、為了引我出來還是如何。
+那些不重要。
+@char L1.Eye1Eyebrow1 pos:50,-58
+閃電: ……
+我知道你很重視這裡的居民，這裡的居民也很重視你。
+居民協助你躲開我昨天的來訪，你在破壞的時候並沒有造成區域問題。
+這不是突發事件，但我想知道為什麼你會這樣做。
+@hide L1
+@char L2.Eye5Mou1Eyebrow3 pos:50,-45
+閃電: ……
+之後再跟我聊聊吧。

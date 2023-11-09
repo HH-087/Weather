@@ -43,7 +43,7 @@
 						"Id": "ParamHairFront"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.455,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -54,7 +54,7 @@
 						"Id": "ParamHairFront2"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.659,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -65,7 +65,7 @@
 						"Id": "ParamHairSide"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.455,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -76,7 +76,7 @@
 						"Id": "ParamHairSide2"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.659,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -87,7 +87,7 @@
 						"Id": "ParamHairBack"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.455,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -98,7 +98,7 @@
 						"Id": "ParamHairBack2"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.659,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": true
@@ -109,7 +109,7 @@
 						"Id": "Tile"
 					},
 					"VertexIndex": 2,
-					"Scale": 1.659,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -120,7 +120,7 @@
 						"Id": "Tile2"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.455,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false

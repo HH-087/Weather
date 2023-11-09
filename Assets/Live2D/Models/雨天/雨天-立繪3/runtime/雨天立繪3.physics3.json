@@ -3,7 +3,7 @@
 	"Meta": {
 		"PhysicsSettingCount": 2,
 		"TotalInputCount": 2,
-		"TotalOutputCount": 23,
+		"TotalOutputCount": 15,
 		"VertexCount": 15,
 		"EffectiveForces": {
 			"Gravity": {
@@ -275,96 +275,7 @@
 					"Reflect": false
 				}
 			],
-			"Output": [
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone"
-					},
-					"VertexIndex": 2,
-					"Scale": 6.07,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone2"
-					},
-					"VertexIndex": 2,
-					"Scale": 6.07,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone3"
-					},
-					"VertexIndex": 3,
-					"Scale": 6.338,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone4"
-					},
-					"VertexIndex": 4,
-					"Scale": 6.441,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone5"
-					},
-					"VertexIndex": 5,
-					"Scale": 6.523,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone6"
-					},
-					"VertexIndex": 6,
-					"Scale": 6.587,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone7"
-					},
-					"VertexIndex": 7,
-					"Scale": 6.22,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone8"
-					},
-					"VertexIndex": 8,
-					"Scale": 5.441,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				}
-			],
+			"Output": [],
 			"Vertices": [
 				{
 					"Position": {

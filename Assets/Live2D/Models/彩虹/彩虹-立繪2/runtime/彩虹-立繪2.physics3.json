@@ -4,7 +4,7 @@
 		"PhysicsSettingCount": 1,
 		"TotalInputCount": 1,
 		"TotalOutputCount": 12,
-		"VertexCount": 5,
+		"VertexCount": 4,
 		"EffectiveForces": {
 			"Gravity": {
 				"X": 0,
@@ -42,7 +42,7 @@
 						"Target": "Parameter",
 						"Id": "ParamHairFront"
 					},
-					"VertexIndex": 2,
+					"VertexIndex": 1,
 					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
@@ -108,11 +108,11 @@
 						"Target": "Parameter",
 						"Id": "Paramribbon"
 					},
-					"VertexIndex": 4,
+					"VertexIndex": 2,
 					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
-					"Reflect": false
+					"Reflect": true
 				},
 				{
 					"Destination": {
@@ -152,7 +152,7 @@
 						"Target": "Parameter",
 						"Id": "Paramx"
 					},
-					"VertexIndex": 1,
+					"VertexIndex": 2,
 					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
@@ -163,7 +163,7 @@
 						"Target": "Parameter",
 						"Id": "Paramy2"
 					},
-					"VertexIndex": 2,
+					"VertexIndex": 1,
 					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
@@ -210,16 +210,6 @@
 					"Delay": 0.64,
 					"Acceleration": 0.5,
 					"Radius": 3
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 14.6
-					},
-					"Mobility": 0.12,
-					"Delay": 0.56,
-					"Acceleration": 0.4,
-					"Radius": 3.1
 				}
 			],
 			"Normalization": {

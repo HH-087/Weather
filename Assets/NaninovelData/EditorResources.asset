@@ -180,12 +180,24 @@ MonoBehaviour:
     - name: WeatherBallRain
       pathPrefix: UI
       guid: 68da6cefa5e132145933db1ef358db39
+    - name: Note
+      pathPrefix: UI
+      guid: 2774be8e53e0e04479f7094d9e3f0174
     - name: StreetUI
       pathPrefix: UI
       guid: eee58f54d77b4dd4cb53dea624dd2cfd
     - name: NewBoardUI
       pathPrefix: UI
       guid: ac78157fb27ad564cb40c49f7b560b90
+    - name: 1-2Wire
+      pathPrefix: UI
+      guid: 3c1743563fa4f8f44a02a8475bfcef52
+    - name: 1-2Rotate
+      pathPrefix: UI
+      guid: 49da01ea4873fda48a15da170fb5188b
+    - name: 1-5Line
+      pathPrefix: UI
+      guid: c816f831b6c386c48b9d61274af489c4
   - Id: Inventory
     Resources:
     - name: Armor
@@ -197,15 +209,33 @@ MonoBehaviour:
     - name: Sword
       pathPrefix: Inventory
       guid: e936762b02b3d9b47a7e6920468f3562
+    - name: Unbrella
+      pathPrefix: Inventory
+      guid: 3d48f3b6a5012ce418d435706a0f65d4
     - name: NamePlate
       pathPrefix: Inventory
       guid: b902e823f9832cc4cbca48b415f7f794
-    - name: Tape
+    - name: SealTape
       pathPrefix: Inventory
-      guid: e75df34dc8d3c2041b0275e0421c9631
+      guid: c1cb157010ea001468bc7b7397224f8b
     - name: Bag
       pathPrefix: Inventory
       guid: 44ca429bbe49a7b49aaf711f367ef0cf
+    - name: Wire
+      pathPrefix: Inventory
+      guid: 7db647d92e8110849b70f99f6aeb0c13
+    - name: ElectricalTape
+      pathPrefix: Inventory
+      guid: 0986032956e7b744e83d9bee0625fc3a
+    - name: Gloves
+      pathPrefix: Inventory
+      guid: af143fcfba98da945a321023ba2fcf8a
+    - name: SunnyDoll
+      pathPrefix: Inventory
+      guid: b1dde7565de4633469700e96a7123c77
+    - name: Watcher
+      pathPrefix: Inventory
+      guid: c54d6c0b0216e3841b8fd71cdb1da175
   - Id: Scripts
     Resources:
     - name: TestScript
@@ -223,6 +253,27 @@ MonoBehaviour:
     - name: SunnyIntro
       pathPrefix: Scripts
       guid: 21628455dffd3eb4bb12cfc0767eff45
+    - name: DeterminationUseItem
+      pathPrefix: Scripts
+      guid: 7fbd78edea39a244591e851fbaf1fc69
+    - name: 1-1
+      pathPrefix: Scripts
+      guid: 4284c19f8a4303341b5a77a464db9d19
+    - name: 1-2
+      pathPrefix: Scripts
+      guid: dbab8ff5655cb5b429d90e082df38ef5
+    - name: 1-3
+      pathPrefix: Scripts
+      guid: 7302092742712224d805df49ff001600
+    - name: 1-4
+      pathPrefix: Scripts
+      guid: 923913ba19505614ba5b3a8b0855a606
+    - name: 1-4N
+      pathPrefix: Scripts
+      guid: 566b87353f1b91e44bdaca2470adf9c9
+    - name: 1-5
+      pathPrefix: Scripts
+      guid: 33733767015aa8c47b2365ae986e534a
   - Id: TextPrinters/8610c21f-5d83-4cda-9b78-1351bb462838
     Resources:
     - name: Custom
@@ -237,47 +288,22 @@ MonoBehaviour:
     Resources:
     - name: S1
       pathPrefix: Characters
-      guid: d0a4fd85efe0b394b8034ea390f19189
+      guid: 15a7472d607b04142bda1425ab961ebc
   - Id: Characters/71e8cdc4-af2b-48cc-a6dd-470fed6f0e29
     Resources:
     - name: S2
       pathPrefix: Characters
-      guid: 2603c22745334ed488b77fb44dcf9511
+      guid: 68ae8cfe468537b449ade33d91d931d2
   - Id: Characters/82284133-e7a6-4a5f-8358-cbf21fa61918
     Resources:
     - name: S3
       pathPrefix: Characters
-      guid: f6727565ffac5a9489fceedd81a3733e
+      guid: bc70a7e4578310946bdf36d8a41029ec
   - Id: Characters/3466253a-b9e4-45f6-9267-1587f19a6085
     Resources:
     - name: R1Unknow
       pathPrefix: Characters
       guid: 1e04ee77f7d15634d8b5174c371b515e
-  - Id: Backgrounds/1d41b645-14cc-41fb-8d1e-dae5ae35614f
-    Resources:
-    - name: Day
-      pathPrefix: Backgrounds/Sunny
-      guid: 4e6f208aa4cdf0746bf88d895056ac8e
-    - name: Night
-      pathPrefix: Backgrounds/Sunny
-      guid: 7216a9af21c65f849833e8f3076a8882
-  - Id: Backgrounds/ea57b589-4bd2-468f-8b32-7a040e70acd8
-    Resources:
-    - name: Street
-      pathPrefix: Backgrounds/Rain
-      guid: b2a1874cdff535e46aa39c88f6023c8d
-    - name: Gallery
-      pathPrefix: Backgrounds/Rain
-      guid: 6fb9b603b78e18e4183066cc4c4f4957
-    - name: Stair
-      pathPrefix: Backgrounds/Rain
-      guid: 8a44c53f558485b479babb450b84bcca
-    - name: Door
-      pathPrefix: Backgrounds/Rain
-      guid: 5d5dc94a7813ff34a9700750f919118d
-    - name: Toilet
-      pathPrefix: Backgrounds/Rain
-      guid: a67ec3419b0ea7745a8a04cb2a7a68af
   - Id: Characters/e8568664-b835-40de-888d-9858d0eb1d18
     Resources:
     - name: R2Unknow
@@ -313,11 +339,33 @@ MonoBehaviour:
     - name: HeavyRain
       pathPrefix: Audio
       guid: 7285b19f1b1df654a9ab840c3cfcde21
-  - Id: Backgrounds/e2ff4b8e-26a2-49d4-8e9c-43709556dd49
-    Resources:
-    - name: Black
-      pathPrefix: Backgrounds/Black
-      guid: 9b83a5afa112f6d4298560a0c6c62651
+    - name: Ringing
+      pathPrefix: Audio
+      guid: 00ee5bf0da556214db3ef470f86b42d1
+    - name: Home
+      pathPrefix: Audio
+      guid: f2e8217d5ef8e5d49a8e193a6d5a8795
+    - name: SunnyArea
+      pathPrefix: Audio
+      guid: 350b86a92556eef4db28704ba4228472
+    - name: CloudArea
+      pathPrefix: Audio
+      guid: 524a952749dbde948882eba81ad8143d
+    - name: RainbowArea
+      pathPrefix: Audio
+      guid: 26e497eac88ace143853f8873e333a25
+    - name: LightningArea
+      pathPrefix: Audio
+      guid: 47cc02514cb6d2b47913e7d73c9e9cc8
+    - name: RainArea
+      pathPrefix: Audio
+      guid: 71adf0e907b664d4fa5ed549f9bfb4c7
+    - name: LightningUnstable
+      pathPrefix: Audio
+      guid: 374fe44e70e25c44a9e6bba45fa7092e
+    - name: LightningAlley
+      pathPrefix: Audio
+      guid: 8fd696c6538e17146bbfb9a14d9e606d
   - Id: Characters/8772482f-406a-499d-af53-af20dd7a4936
     Resources:
     - name: Rain
@@ -348,3 +396,178 @@ MonoBehaviour:
     - name: Tooltip
       pathPrefix: TextPrinters
       guid: a9c892dc2162bc043be4b76cacd67cb8
+  - Id: test
+    Resources:
+    - name: abc
+      pathPrefix: test
+      guid: 
+    - name: bcd
+      pathPrefix: test
+      guid: 
+  - Id: Movies
+    Resources: []
+  - Id: Note
+    Resources:
+    - name: Day1
+      pathPrefix: Note
+      guid: 6b528e73b7146dc42a1d1a807ffb3161
+  - Id: Unlockables
+    Resources: []
+  - Id: ChoiceHandlers/2a6d9f36-5bf5-4469-ac00-3a67f92179a1
+    Resources:
+    - name: Pump
+      pathPrefix: ChoiceHandlers
+      guid: 
+  - Id: Backgrounds/9a4d4ab2-8ae7-4942-bfb4-ba79cfedc3c2
+    Resources:
+    - name: Black
+      pathPrefix: Backgrounds/Image
+      guid: 9b83a5afa112f6d4298560a0c6c62651
+    - name: SunnyRoomDay
+      pathPrefix: Backgrounds/Image
+      guid: 4e6f208aa4cdf0746bf88d895056ac8e
+    - name: SunnyRoomNight
+      pathPrefix: Backgrounds/Image
+      guid: 7216a9af21c65f849833e8f3076a8882
+    - name: FlowerField
+      pathPrefix: Backgrounds/Image
+      guid: ecea64de9a5b4b74d8dc2965ed2c84e7
+    - name: SunnyCorridor
+      pathPrefix: Backgrounds/Image
+      guid: 17c685ba45d027c4abb4a277b87b9ac2
+    - name: Street
+      pathPrefix: Backgrounds/Image
+      guid: b2a1874cdff535e46aa39c88f6023c8d
+    - name: Gallery
+      pathPrefix: Backgrounds/Image
+      guid: 6fb9b603b78e18e4183066cc4c4f4957
+    - name: Stair
+      pathPrefix: Backgrounds/Image
+      guid: 8a44c53f558485b479babb450b84bcca
+    - name: Door
+      pathPrefix: Backgrounds/Image
+      guid: 8a74ba62d34f5ee48afe679deb7491f2
+    - name: Toilet
+      pathPrefix: Backgrounds/Image
+      guid: a67ec3419b0ea7745a8a04cb2a7a68af
+    - name: Entrance
+      pathPrefix: Backgrounds/Image
+      guid: 6852baa954a0d48429815decfa8a6098
+    - name: RainHouse
+      pathPrefix: Backgrounds/Image
+      guid: d00fc7e02a4cb9e4d8fae21971ebf954
+    - name: Grassland
+      pathPrefix: Backgrounds/Image
+      guid: 6cde00b5aa2d33e4a882ca6093da3d3e
+    - name: Building
+      pathPrefix: Backgrounds/Image
+      guid: 5b0e97b8338ebd04fbb69d927e43534e
+    - name: Alley
+      pathPrefix: Backgrounds/Image
+      guid: 394948bb92eb9f84eb693cc2e255a280
+    - name: Factory
+      pathPrefix: Backgrounds/Image
+      guid: 33aff63111e70454e99f65d615adaedd
+    - name: C1-2Pic1
+      pathPrefix: Backgrounds/Image
+      guid: 4ca54299d3526c54f876a4e9a4156dbb
+    - name: C1-2Pic2
+      pathPrefix: Backgrounds/Image
+      guid: b1732ce4bbd7bd24495221552f5c3ee6
+    - name: C1-2Pic3
+      pathPrefix: Backgrounds/Image
+      guid: c1458210da291f04fbe37b286fced388
+    - name: C1-2Pic3Fixed
+      pathPrefix: Backgrounds/Image
+      guid: be33f578bccb47a4ab0e0cc40ef59673
+    - name: C1-2Pic4
+      pathPrefix: Backgrounds/Image
+      guid: f3177d5c54436524e88d3f80139fc205
+    - name: C1-2Pic4Fixed
+      pathPrefix: Backgrounds/Image
+      guid: fcf2206610e7d9b4c946f4ae462b8b65
+    - name: C1-2BrokenArea
+      pathPrefix: Backgrounds/Image
+      guid: 076915fa3640c624486a9fb151adaf65
+    - name: AmusementPark
+      pathPrefix: Backgrounds/Image
+      guid: 180bddd9687d7c84690dd5db5731d231
+    - name: Home
+      pathPrefix: Backgrounds/Image
+      guid: f14adfc2532d47d41a337f429eff29f3
+  - Id: Characters/dc28c874-6674-4a44-8557-ee3e2cf36b45
+    Resources:
+    - name: C1
+      pathPrefix: Characters
+      guid: 52744839d1a34904099fb79faab030cd
+  - Id: Characters/c2a33dba-a10a-463d-8cf3-dee03a9112b1
+    Resources:
+    - name: C2
+      pathPrefix: Characters
+      guid: c567572cbe085d242aaceb5a0017f0cd
+  - Id: Characters/d02a0667-c0f2-4d5e-a56a-8c985dc6575c
+    Resources:
+    - name: C3
+      pathPrefix: Characters
+      guid: b2ba557419b939a4aa2d0daabd5baf10
+  - Id: Characters/3fc151d6-286c-4931-a4cc-7aabd4ba21bf
+    Resources:
+    - name: RB1
+      pathPrefix: Characters
+      guid: 4c9697ece340aa8419a81abb4f2c7aae
+  - Id: Characters/fdab8115-fdb0-44c6-ab9d-d2f549d9149b
+    Resources:
+    - name: RB2
+      pathPrefix: Characters
+      guid: ce999eed0ec4e2c49841ed814684c99f
+  - Id: Characters/bb123d09-c2db-4819-b9c7-84b1021d3898
+    Resources:
+    - name: RB3
+      pathPrefix: Characters
+      guid: 346b85340b22518429b524d542354f64
+  - Id: Characters/0006882d-265e-4c2a-a40d-f2e61a28945d
+    Resources:
+    - name: 1
+      pathPrefix: Characters/NPC
+      guid: 7392dc69ec0faee4ab9f2ace5269723e
+    - name: 2
+      pathPrefix: Characters/NPC
+      guid: b8890d7716b72c444a52796c66293a5f
+    - name: Lightning1
+      pathPrefix: Characters/NPC
+      guid: 46e3aeb97ea8a1f459b621dc11789ce8
+  - Id: Characters/895d81a0-5837-4351-96ed-0adbc596ad64
+    Resources:
+    - name: L1
+      pathPrefix: Characters
+      guid: e29efeb7a5832b142a4f72a0223ef85a
+  - Id: Characters/48881fe3-ebff-466f-8152-726e0b1dfd7e
+    Resources:
+    - name: L2
+      pathPrefix: Characters
+      guid: 03dc920034efbf347a721138d9b1f421
+  - Id: Characters/3a6c21e8-23a2-4f94-8f63-f6d0d0beef37
+    Resources:
+    - name: L3
+      pathPrefix: Characters
+      guid: d87dd807c15ecdb4289461dc4e7fe2f1
+  - Id: Characters/b48a3a56-7f31-4f9a-9e14-65e5a46774bc
+    Resources:
+    - name: 1
+      pathPrefix: Characters/asdf
+      guid: 4c9697ece340aa8419a81abb4f2c7aae
+  - Id: Characters/63f4c66e-1c58-4a43-b949-bfae20dfb804
+    Resources:
+    - name: a
+      pathPrefix: Characters/NPC
+      guid: 7392dc69ec0faee4ab9f2ace5269723e
+    - name: b
+      pathPrefix: Characters/NPC
+      guid: b8890d7716b72c444a52796c66293a5f
+    - name: c
+      pathPrefix: Characters/NPC
+      guid: 46e3aeb97ea8a1f459b621dc11789ce8
+  - Id: Characters/8fc8f1b8-6a7e-43a6-9f1b-36e62f06add8
+    Resources: []
+  - Id: CharacterAvatars
+    Resources: []

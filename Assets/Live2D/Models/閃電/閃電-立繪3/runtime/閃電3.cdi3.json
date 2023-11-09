@@ -1,0 +1,155 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "Parampose",
+			"GroupId": "",
+			"Name": "動作切換"
+		},
+		{
+			"Id": "ParamShowMouth",
+			"GroupId": "",
+			"Name": "露嘴"
+		},
+		{
+			"Id": "ParamEye",
+			"GroupId": "",
+			"Name": "eye"
+		},
+		{
+			"Id": "ParamMouth",
+			"GroupId": "",
+			"Name": "Mouth"
+		},
+		{
+			"Id": "ParamEyebrow",
+			"GroupId": "",
+			"Name": "Eyebrow"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "Param1",
+			"GroupId": "",
+			"Name": "par1"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "par2"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "摇动 前发"
+		},
+		{
+			"Id": "ParamHairFront2",
+			"GroupId": "",
+			"Name": "摇动 前发2"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "摇动 侧发"
+		},
+		{
+			"Id": "ParamHairSide2",
+			"GroupId": "",
+			"Name": "摇动 侧发2"
+		},
+		{
+			"Id": "ParamDeco",
+			"GroupId": "",
+			"Name": "裝飾2"
+		},
+		{
+			"Id": "ParamDeco2",
+			"GroupId": "",
+			"Name": "裝飾"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "摇动 后发"
+		},
+		{
+			"Id": "ParamHairBack2",
+			"GroupId": "",
+			"Name": "摇动 后发2"
+		},
+		{
+			"Id": "ParamArmMove",
+			"GroupId": "",
+			"Name": "手搖晃"
+		},
+		{
+			"Id": "Paramx",
+			"GroupId": "",
+			"Name": "x"
+		},
+		{
+			"Id": "Paramy",
+			"GroupId": "",
+			"Name": "y"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "前頭髮"
+		},
+		{
+			"Id": "Part2",
+			"Name": "嘴巴(先不用管)"
+		},
+		{
+			"Id": "Part3",
+			"Name": "一些雜七雜八"
+		},
+		{
+			"Id": "Part4",
+			"Name": "露嘴動作1"
+		},
+		{
+			"Id": "Part15",
+			"Name": "無露嘴動作1"
+		},
+		{
+			"Id": "Part5",
+			"Name": "無露嘴動作1"
+		},
+		{
+			"Id": "Part6",
+			"Name": "露嘴動作2"
+		},
+		{
+			"Id": "Part17",
+			"Name": "動作4"
+		},
+		{
+			"Id": "Part7",
+			"Name": "無露嘴動作2"
+		},
+		{
+			"Id": "Part8",
+			"Name": "露嘴動作3"
+		},
+		{
+			"Id": "Part9",
+			"Name": "無露嘴動作3"
+		},
+		{
+			"Id": "Part22",
+			"Name": "表情"
+		},
+		{
+			"Id": "Part10",
+			"Name": "後頭髮"
+		}
+	]
+}

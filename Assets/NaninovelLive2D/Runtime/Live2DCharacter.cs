@@ -140,5 +140,6 @@ namespace Naninovel
             controller.transform.SetParent(transform);
             return controller;
         }
+        
     }
 }

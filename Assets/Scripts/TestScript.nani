@@ -1,4 +1,4 @@
-@showUI Inventory
-@addItem NamePlate
-@addItem Tape
-@addItem Bag
+@showUI Note
+@addPage Day1
+@stop
+

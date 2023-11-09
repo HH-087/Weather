@@ -3,7 +3,7 @@
 	"Meta": {
 		"PhysicsSettingCount": 2,
 		"TotalInputCount": 2,
-		"TotalOutputCount": 22,
+		"TotalOutputCount": 14,
 		"VertexCount": 15,
 		"EffectiveForces": {
 			"Gravity": {
@@ -47,7 +47,7 @@
 						"Id": "ParamHairFront"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -58,7 +58,7 @@
 						"Id": "ParamHairSide2"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -80,7 +80,7 @@
 						"Id": "ParamHairBack"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": true
@@ -91,7 +91,7 @@
 						"Id": "HandMove"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -102,7 +102,7 @@
 						"Id": "ParamHairBack2"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -124,7 +124,7 @@
 						"Id": "ParamHairBack4"
 					},
 					"VertexIndex": 3,
-					"Scale": 1.456,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": true
@@ -135,7 +135,7 @@
 						"Id": "deco"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -157,7 +157,7 @@
 						"Id": "coat"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -179,7 +179,7 @@
 						"Id": "Paramx"
 					},
 					"VertexIndex": 1,
-					"Scale": 1.242,
+					"Scale": 1,
 					"Weight": 100,
 					"Type": "Angle",
 					"Reflect": false
@@ -264,206 +264,117 @@
 					"Reflect": false
 				}
 			],
-			"Output": [
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone"
-					},
-					"VertexIndex": 1,
-					"Scale": 1.471,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone2"
-					},
-					"VertexIndex": 2,
-					"Scale": 3.611,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone3"
-					},
-					"VertexIndex": 3,
-					"Scale": 3.936,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone4"
-					},
-					"VertexIndex": 4,
-					"Scale": 4.167,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone5"
-					},
-					"VertexIndex": 5,
-					"Scale": 4.351,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone6"
-					},
-					"VertexIndex": 6,
-					"Scale": 4.498,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone7"
-					},
-					"VertexIndex": 7,
-					"Scale": 4.596,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": true
-				},
-				{
-					"Destination": {
-						"Target": "Parameter",
-						"Id": "stone8"
-					},
-					"VertexIndex": 5,
-					"Scale": 1,
-					"Weight": 100,
-					"Type": "Angle",
-					"Reflect": false
-				}
-			],
+			"Output": [],
 			"Vertices": [
 				{
 					"Position": {
 						"X": 0,
 						"Y": 0
 					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
+				},
+				{
+					"Position": {
+						"X": 0,
+						"Y": 2
+					},
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
 				},
 				{
 					"Position": {
 						"X": 0,
 						"Y": 4
 					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
+				},
+				{
+					"Position": {
+						"X": 0,
+						"Y": 6
+					},
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
 				},
 				{
 					"Position": {
 						"X": 0,
 						"Y": 8
 					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
+				},
+				{
+					"Position": {
+						"X": 0,
+						"Y": 10
+					},
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
 				},
 				{
 					"Position": {
 						"X": 0,
 						"Y": 12
 					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
+				},
+				{
+					"Position": {
+						"X": 0,
+						"Y": 14
+					},
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
 				},
 				{
 					"Position": {
 						"X": 0,
 						"Y": 16
 					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
+				},
+				{
+					"Position": {
+						"X": 0,
+						"Y": 18
+					},
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
 				},
 				{
 					"Position": {
 						"X": 0,
 						"Y": 20
 					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 24
-					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 28
-					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 32
-					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 36
-					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
-				},
-				{
-					"Position": {
-						"X": 0,
-						"Y": 40
-					},
-					"Mobility": 0.6,
-					"Delay": 0.8,
-					"Acceleration": 0.4,
-					"Radius": 4
+					"Mobility": 0.1,
+					"Delay": 0.7,
+					"Acceleration": 1,
+					"Radius": 2
 				}
 			],
 			"Normalization": {

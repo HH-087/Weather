@@ -71,7 +71,6 @@ MonoBehaviour:
     - TMProFullscreen
     - TMProWide
     - TMProBubble
-    - Custom
     - Tooltip
     metas:
     - Implementation: Naninovel.UITextPrinter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
@@ -364,41 +363,6 @@ MonoBehaviour:
         - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
       guid: f1afb898-7011-490e-8959-68a062af0b2c
-      customData:
-        rid: -2
-      Pivot: {x: 0.5, y: 0.5}
-      PixelsPerUnit: 100
-      EnableDepthPass: 1
-      DepthAlphaCutoff: 0.5
-      CustomTextureShader: {fileID: 0}
-      CustomSpriteShader: {fileID: 0}
-      RenderTexture: {fileID: 0}
-      RenderRectangle:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1
-        height: 1
-      AutoReset: 1
-      AutoDefault: 1
-      AutoWait: 1
-      AutoLineBreak: 0
-      AddToBacklog: 1
-      SplitBacklogMessages: 0
-      StopVoice: 0
-      ChangeVisibilityDuration: 0.3
-      PrintFrameDelay: 1
-      AuthoredTemplate: 
-    - Implementation: Naninovel.UITextPrinter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Loader:
-        PathPrefix: TextPrinters
-        ProviderTypes:
-        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      guid: 8610c21f-5d83-4cda-9b78-1351bb462838
       customData:
         rid: -2
       Pivot: {x: 0.5, y: 0.5}
