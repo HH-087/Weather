@@ -277,6 +277,9 @@ MonoBehaviour:
     - name: 1-2N
       pathPrefix: Scripts
       guid: 83c1eec30f1d3fc428fba54ed849fded
+    - name: RainAfterToilet
+      pathPrefix: Scripts
+      guid: 569ef786c470c924797b23a5ff49cbe0
   - Id: TextPrinters/8610c21f-5d83-4cda-9b78-1351bb462838
     Resources:
     - name: Custom
@@ -369,12 +372,6 @@ MonoBehaviour:
     - name: LightningAlley
       pathPrefix: Audio
       guid: 8fd696c6538e17146bbfb9a14d9e606d
-    - name: QuestSuccess
-      pathPrefix: Audio
-      guid: afa247cb11e9453469464a352c7b4590
-    - name: Bii
-      pathPrefix: Audio
-      guid: 8aadcbeed04a843468348db46c1e7495
     - name: Search
       pathPrefix: Audio
       guid: dbc21da5b0ea1cf4dbd2ccde6f8cb811

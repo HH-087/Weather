@@ -1,4 +1,3 @@
-@gosub .MeetRainyCon
 @printer Dialogue
 # BeforeDay
 @set Chapter="1-1"
