@@ -1,3 +1,7 @@
+@set Chapter="0-1"
+@addItem NamePlate
+@addItem SealTape
+@addItem Bag
 @back Day id:Sunny
 (這裡就是晴天的區域嗎?)
 
@@ -100,22 +104,11 @@ S3: 全國的人類都仰賴這裡的農產品生存，如果出了什麼差錯�
 S1: 對啊，在天氣管理局裡大家不都是這樣稱呼嗎？
 @char S1.S1Eye5Mou1Blush3Body2 pos:50,-3
 S1: 你身上也有名牌啊！給我看看！
-
+@set AllowGiveItem=true
 @showUI Inventory
-@addItem NamePlate
-@addItem SealTape
-@addItem Bag
-@hidePrinter 
+@hidePrinter
 @stop
 
-# DeterminationGiveSunny
-{GivingItem}
-@if GivingItem=="NamePlate" 
-	@gosub .GiveNamePlate
-@else
-	@gosub .GiveOtherThing
-@endif
-@stop
 # GiveOtherThing
 @hide S1
 @hide S2

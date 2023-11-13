@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8070666091538678762
 RectTransform:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2741489158869623838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -546,7 +546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -727.0498, y: -377.8538}
+  m_AnchoredPosition: {x: -38, y: -101.32}
   m_SizeDelta: {x: 465.9, y: 324.281}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6828252693993732249
@@ -980,7 +980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3858285028657737144
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1013,9 +1013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: 
-  scriptText: '@Goto RainIntro.GetCloth
-
-    @hideUI ClothUI'
+  scriptText: "@Goto RainIntro. \n@hideUI ClothUI"
   playOnAwake: 0
   disableWaitInput: 0
 --- !u!1 &7560346620727139836
@@ -1038,7 +1036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9202986968942206778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1500,7 +1498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6587992119292240904
 RectTransform:
   m_ObjectHideFlags: 0

@@ -1,8 +1,10 @@
 # Determination
-@goto SunnyIntro.DeterminationGiveSunny if:Chapter=0
+@goto SunnyIntro.GiveNamePlate if:(Chapter="0-1")&(AllowGiveItem=true)&(GivingItem="NamePlate")
 
 # UseInWrongWay
-(這個物品不能在這裡使用)
+@goto SunnyIntro.GiveOtherThing if:(Chapter="0-1")&(AllowGiveItem=true)&(!(GivingItem="NamePlate"))
+(這個物品不能這樣使用)
+@stop
 
 # UseUnbrella
 @printer Custom

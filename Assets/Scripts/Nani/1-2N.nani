@@ -1,0 +1,86 @@
+#Enter
+@set Chapter="1-2N"
+@back Authority id:Image
+（……）
+（晚上的管理局給人一種特別恐怖的感覺。）
+（沒想到ＩＣ卡也做了特別設置，雖然顯示非法卡卻開了門。）
+（……）
+（今天主要先去檔案室確認一下資料吧。）
+
+#Check
+; 轉換到檔案室的場地
+@back Authority id:Image
+@set ShelfCount=false
+@set DataCount=false
+@showUI Archives
+@hidePrinter
+@stop
+
+#CheckShelf
+@if ShelfCount=false
+（這裡存放的是天氣們的資料。）
+（先確認雨天的資料好了。）
+（……）
+
+（雨天過往的工作績效挺不錯的。）
+（不過在居民反應那邊明顯比較低。）
+（應該是說居民根本不知道雨天的存在。）
+（這次雨天不來上班果真是特例嗎？）
+
+（不過雨天是從什麼時候開始沒來上班的呢？）
+（嗯……看起來是38天前開始出現異狀。）
+@set ShelfCount=true
+@elseif ShelfCount=true
+@endif
+@hidePrinter
+@gosub .CheckRead
+
+
+#CheckData
+@if DataCount=false
+（這裡有另一疊文件。）
+（似乎是在整理管理局相關的事件…嗯？）
+（上任管理人的事件應該有被記載上去吧？）
+（……）
+（只寫了代理管理人的上任日期。）
+（是什麼時候呢？）
+
+（……）
+（39天前，嗎？）
+
+（所以上任管理人的死亡日期，跟雨天出現異狀的時間沒差多少嗎？）
+@set DataCount=true
+@elseif DataCount=true
+@endif
+@set DataCount=true
+@gosub .CheckRead
+
+
+#CheckRead
+
+@gosub .Clean if:(DataCount=true)&(ShelfCount=true)
+@hidePrinter
+@stop
+
+#Clean
+（這樣看起來，雨天很有可能是因為上任管理人才出現異狀。）
+（也有可能是跟代理管理人有關嗎？）
+（不對，代理管理人第一天並沒有直接與天氣見面。）
+（代理管理人似乎在上任後就沒看見雨天了。）
+
+（雨天跟上任管理人的關係必須查清楚。）
+（先清理所有痕跡吧。）
+@hidePrinter
+@set StartClean=true
+@stop
+
+#CleanEnd
+（這樣就沒問題了。）
+@hidePrinter
+@stop
+#Retreat
+@if !DoorClean&!ShelfClean
+（必須把痕跡清理乾淨才能離開。）
+@elseif DoorClean&ShelfClean
+@goto 1-3
+@stop

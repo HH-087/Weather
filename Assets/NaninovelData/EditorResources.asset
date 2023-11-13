@@ -198,6 +198,9 @@ MonoBehaviour:
     - name: 1-5Line
       pathPrefix: UI
       guid: c816f831b6c386c48b9d61274af489c4
+    - name: Archives
+      pathPrefix: UI
+      guid: 455647e7abbf1db45964a18cecb5158d
   - Id: Inventory
     Resources:
     - name: Armor
@@ -244,9 +247,6 @@ MonoBehaviour:
     - name: RainIntro
       pathPrefix: Scripts
       guid: 96b3742b29b10e24d9f3a6be659d5e69
-    - name: RainAfterToilet
-      pathPrefix: Scripts
-      guid: 569ef786c470c924797b23a5ff49cbe0
     - name: GetCloth
       pathPrefix: Scripts
       guid: b83f03937709d07458ea1d7c3dc780e6
@@ -274,6 +274,9 @@ MonoBehaviour:
     - name: 1-5
       pathPrefix: Scripts
       guid: 33733767015aa8c47b2365ae986e534a
+    - name: 1-2N
+      pathPrefix: Scripts
+      guid: 83c1eec30f1d3fc428fba54ed849fded
   - Id: TextPrinters/8610c21f-5d83-4cda-9b78-1351bb462838
     Resources:
     - name: Custom
@@ -347,7 +350,7 @@ MonoBehaviour:
       guid: f2e8217d5ef8e5d49a8e193a6d5a8795
     - name: SunnyArea
       pathPrefix: Audio
-      guid: 350b86a92556eef4db28704ba4228472
+      guid: 807a5087e07f5bb4384f442b5f30db0a
     - name: CloudArea
       pathPrefix: Audio
       guid: 524a952749dbde948882eba81ad8143d
@@ -366,6 +369,15 @@ MonoBehaviour:
     - name: LightningAlley
       pathPrefix: Audio
       guid: 8fd696c6538e17146bbfb9a14d9e606d
+    - name: QuestSuccess
+      pathPrefix: Audio
+      guid: afa247cb11e9453469464a352c7b4590
+    - name: Bii
+      pathPrefix: Audio
+      guid: 8aadcbeed04a843468348db46c1e7495
+    - name: Search
+      pathPrefix: Audio
+      guid: dbc21da5b0ea1cf4dbd2ccde6f8cb811
   - Id: Characters/8772482f-406a-499d-af53-af20dd7a4936
     Resources:
     - name: Rain
@@ -413,11 +425,6 @@ MonoBehaviour:
       guid: 6b528e73b7146dc42a1d1a807ffb3161
   - Id: Unlockables
     Resources: []
-  - Id: ChoiceHandlers/2a6d9f36-5bf5-4469-ac00-3a67f92179a1
-    Resources:
-    - name: Pump
-      pathPrefix: ChoiceHandlers
-      guid: 
   - Id: Backgrounds/9a4d4ab2-8ae7-4942-bfb4-ba79cfedc3c2
     Resources:
     - name: Black
@@ -431,7 +438,7 @@ MonoBehaviour:
       guid: 7216a9af21c65f849833e8f3076a8882
     - name: FlowerField
       pathPrefix: Backgrounds/Image
-      guid: ecea64de9a5b4b74d8dc2965ed2c84e7
+      guid: ee67d8a991b21f9438e2bb09cbdbb12d
     - name: SunnyCorridor
       pathPrefix: Backgrounds/Image
       guid: 17c685ba45d027c4abb4a277b87b9ac2
@@ -491,10 +498,16 @@ MonoBehaviour:
       guid: 076915fa3640c624486a9fb151adaf65
     - name: AmusementPark
       pathPrefix: Backgrounds/Image
-      guid: 180bddd9687d7c84690dd5db5731d231
+      guid: a8999ddeb6fbfbd4e9b11602bd29a3a2
     - name: Home
       pathPrefix: Backgrounds/Image
-      guid: f14adfc2532d47d41a337f429eff29f3
+      guid: 1e9087524ff789946be35c8958772ba1
+    - name: Authority
+      pathPrefix: Backgrounds/Image
+      guid: 145497e473a3a6b4db351fbb87597a6d
+    - name: Archives
+      pathPrefix: Backgrounds/Image
+      guid: 698afba0b83563645a5abeec9e35962d
   - Id: Characters/dc28c874-6674-4a44-8557-ee3e2cf36b45
     Resources:
     - name: C1
@@ -570,4 +583,11 @@ MonoBehaviour:
   - Id: Characters/8fc8f1b8-6a7e-43a6-9f1b-36e62f06add8
     Resources: []
   - Id: CharacterAvatars
+    Resources: []
+  - Id: Characters/1f7c3a79-f7d9-45e1-98bb-a5fdbcefcfd4
+    Resources:
+    - name: "\u96E8\u5929_\u5F88\u591A\u5C45\u6C11"
+      pathPrefix: Characters/ManyPeople
+      guid: 409905a8b65e04145929540f1e7acc2f
+  - Id: Characters/6818cd24-bab7-414f-812c-83d0f323f6f6
     Resources: []

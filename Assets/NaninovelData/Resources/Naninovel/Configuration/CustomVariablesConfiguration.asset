@@ -31,3 +31,5 @@ MonoBehaviour:
     value: abc
   - name: AllowUnbrellaUsing
     value: false
+  - name: AllowGiveItem
+    value: false

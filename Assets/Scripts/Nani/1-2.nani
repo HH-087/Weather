@@ -1,3 +1,4 @@
+@gosub .OnMyOwn
 #Phone
 @back Home id:Image
 @char NPC.2 pos:50,0
@@ -315,3 +316,4 @@
 @char L2.Eye5Mou1Eyebrow3 pos:50,-45
 閃電: ……
 之後再跟我聊聊吧。
+@goto 1-2N
