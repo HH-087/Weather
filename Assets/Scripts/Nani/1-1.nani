@@ -37,7 +37,7 @@ Unknown: 開始工作吧。
 @char S1.Eye6Mou1Bady1Blush pos:50,-10
 晴天: 了解！
 @hide S1
-@char S3.Eye1Mou1Body1Shadow1 pos:50,-3
+@char S3.Eye1Mou1Body1Shadow1 pos:50,-6
 晴天: 上班很認真呢！
 @gosub .SunnyAsk
 @stop
@@ -47,26 +47,26 @@ Unknown: 開始工作吧。
 @char S1.Eye2Mou5Body1Blush pos:50,-10
 晴天: ……
 @hide S1
-@char S3.Eye3Mou1Body1Shadow1 pos:50,-3
+@char S3.Eye3Mou1Body1Shadow1 pos:50,-6
 晴天: 雖然知道這是你的工作，但聽起來不太舒服呢。
 @set SunnyLike-=1;
 @gosub .SunnyAsk
 @stop
 
-#SunnyAsk
+# SunnyAsk
 @hide S3
 @char S1.Eye1Mou2Body2Blush pos:50,-10
 晴天: 不過啊，你知道雨天的狀況嗎？
 @hide S1
-@char S3.Eye2Mou2Body1Shadow1 pos:50,-3
+@char S3.Eye2Mou2Body1Shadow1 pos:50,-6
 晴天: 他好像很久沒有上班了，不知道是不是心情受到什麼影響。
-@char S3.Eye1Mou4Body1Shadow1 pos:50,-3
+@char S3.Eye1Mou4Body1Shadow1 pos:50,-6
 晴天: ……
 @hide S3
 @char S1.Eye1Mou2Body1Blush pos:50,-10
 晴天: 看來你還沒找過雨天呢。
 @hide S1
-@char S2.Eye2Mou1 pos:50,-3
+@char S2.Eye2Mou1 pos:50,-7
 晴天: 記得去關心一下他喔。
 @hide S2
 @stopBgm SunnyArea
@@ -78,7 +78,7 @@ Unknown: 開始工作吧。
 @back Grassland id:Image
 ; switch to cloudy area
 ; cloudy appear
-@char C2.Eye1Mou1LeftArm2 pos:50,-14
+@char C2.Eye1Mou1LeftArm2 pos:48,-12
 陰天: ……
 （陰天看起來非常沒有精神。）
 （是本來就這樣嗎？）
@@ -88,13 +88,13 @@ Unknown: 開始工作吧。
 陰天: ……
 我是新任的管理人，這裡的工作狀況還OK嗎？
 @hide C3
-@char C1.Eye2Mou2Body1 pos:50,-90
+@char C1.Eye2Mou2Body1 pos:51,-87
 陰天: ……
 @hide C1
-@char C2.Eye4Mou1Body1 pos:50,-14
+@char C2.Eye4Mou1Body1 pos:48,-12
 陰天: 什麼工作工作的不累嗎？
 @hide C2
-@char C1.Eye5Mou3Body1 pos:50,-90
+@char C1.Eye5Mou3Body1 pos:51,-87
 ……
 @hide C1
 @char C3.Eye1Mou1Body1 pos:50,-3
@@ -181,7 +181,7 @@ Unknown: 開始工作吧。
 @set AllowUnbrellaUsing=true
 
 （先撐個傘吧。）
-@hidePrinter
+@hidePrinter 
 @showUI Inventory
 @stop
 
