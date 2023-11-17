@@ -1,4 +1,4 @@
-@back FlowerField id:Image
+@back Black id:Image
 @set Chapter="1-1"
 @printer Wide
 @input Name summary:"輸入你的名字："
@@ -6,7 +6,7 @@
 {Name}: 我叫做{Name}
 
 # BeforeDay
-@bgm Home
+@bgm Home	
 Unknown: 明天你就要正式上崗了。
 Unknown: 你的主要任務是管理天氣維持良好的天氣環境。換句話說，你必須想辦法讓天氣本身維持良好狀態。
 Unknown: 最直接的方法是解決各個區域出現的突發狀況，當然，與天氣們維繫好的關係也是重點之一。
