@@ -1,26 +1,30 @@
-@printer Dialogue
-# BeforeDay
+@back FlowerField id:Image
 @set Chapter="1-1"
+@printer Wide
+@input Name summary:"輸入你的名字："
+@stop
+{Name}: 我叫做{Name}
+
+# BeforeDay
 @bgm Home
-@back Black id:Image
 Unknown: 明天你就要正式上崗了。
 Unknown: 你的主要任務是管理天氣維持良好的天氣環境。換句話說，你必須想辦法讓天氣本身維持良好狀態。
 Unknown: 最直接的方法是解決各個區域出現的突發狀況，當然，與天氣們維繫好的關係也是重點之一。
-維繫好的關係？
+{Name}: 維繫好的關係？
 Unknown: 如果天氣不信任你，你的工作會難辦。
 Unknown: 等等你就會知道了。
 Unknown: 另外，你的ＩＣ卡平日可以出入一般的公共區域，晚上則可以出入天氣的私人區域及管理局的管制區域。
 Unknown: 晚上的權限只有你擁有。請記得不要讓任何人察覺這件事，包括天氣。
 Unknown: 這些權限是用來處理緊急狀況，與調查案件的。
-了解。
+{Name}: 了解。
 Unknown: 開始工作吧。
 @stopBgm Home
 
 # MeetSunny
 @bgm SunnyArea
-（先從晴天的區域開始吧。）
+先從晴天的區域開始吧。
 @back FlowerField id:Image
-（這裡的產業一如往常充滿活力。）
+這裡的產業一如往常充滿活力。
 ; sunny jump out
 @char S1.Eye6Mou1Body2Blush pos:50,-10
 @slide S1 from:50,-10 to:50,-2 time:0.1
@@ -33,7 +37,7 @@ Unknown: 開始工作吧。
 @stop
 
 # Sunny1_1A
-正式上崗要巡查一下所有區域的狀況。
+{Name}: 正式上崗要巡查一下所有區域的狀況。
 @char S1.Eye6Mou1Bady1Blush pos:50,-10
 晴天: 了解！
 @hide S1
@@ -43,7 +47,7 @@ Unknown: 開始工作吧。
 @stop
 
 # Sunny1_1B
-確認一下這裡有沒有管理上的問題。
+{Name}: 確認一下這裡有沒有管理上的問題。
 @char S1.Eye2Mou5Body1Blush pos:50,-10
 晴天: ……
 @hide S1
@@ -73,20 +77,20 @@ Unknown: 開始工作吧。
 
 # MeetWindy
 @bgm CloudArea
-（上次除了晴天跟雨天以外，沒有見到其他天氣。）
-（這次先去找陰天吧。）
+上次除了晴天跟雨天以外，沒有見到其他天氣。
+這次先去找陰天吧。
 @back Grassland id:Image
 ; switch to cloudy area
 ; cloudy appear
 @char C2.Eye1Mou1LeftArm2 pos:48,-12
 陰天: ……
-（陰天看起來非常沒有精神。）
-（是本來就這樣嗎？）
-你好。
+陰天看起來非常沒有精神。
+是本來就這樣嗎？
+{Name}: 你好。
 @hide C2
 @char C3.Eye1Mou1Body2 pos:50,-3
 陰天: ……
-我是新任的管理人，這裡的工作狀況還OK嗎？
+{Name}: 我是新任的管理人，這裡的工作狀況還OK嗎？
 @hide C3
 @char C1.Eye2Mou2Body1 pos:51,-87
 陰天: ……
@@ -95,23 +99,23 @@ Unknown: 開始工作吧。
 陰天: 什麼工作工作的不累嗎？
 @hide C2
 @char C1.Eye5Mou3Body1 pos:51,-87
-……
+{Name}: ……
 @hide C1
 @char C3.Eye1Mou1Body1 pos:50,-3
 陰天: 我睏了。
-……
+{Name}: ……
 @char C3.Eye5Mou1Body1 pos:50,-3
 陰天: 有什麼問題再來找我吧。
-……
-好……
+{Name}: ……
+{Name}: 好……
 @hide C3
 @stopBgm CloudArea
 
 # MeetRainbow
 @bgm RainbowArea
 @back AmusementPark id:Image
-（來到彩虹的區域了。）
-（這裡是非常熱鬧的遊樂區。）
+來到彩虹的區域了。
+這裡是非常熱鬧的遊樂區。
 ; rainbow jump out
 @char RB2.Eye1Mou1Body3 pos:50,-5
 彩虹: ✧TERUTERU✧
@@ -132,55 +136,55 @@ Unknown: 開始工作吧。
 @char RB1.Eye7Mou2R2L2 pos:50,-80
 彩虹: 嘻嘻嘻嘻嘻！
 @addItem SunnyDoll
-（彩虹塞了一個晴天娃娃給我。）
-……
-（說是晴天娃娃，說晴天娃娃紙片好像比較合適。）
+彩虹塞了一個晴天娃娃給我。
+{Name}: ……
+說是晴天娃娃，說晴天娃娃紙片好像比較合適。
 @hide RB1
 @char RB3.Eye3Mou3Eyebrow3Body2 pos:50,-5
 彩虹: 這是本來要送給**霧**的喔！
-！！霧是⋯⋯上一任管理人的代稱⋯⋯
+{Name}: ！！霧是⋯⋯上一任管理人的代稱⋯⋯
 @hide RB3
 @char RB2.Eye5Mou1Body3 pos:50,-5
 彩虹: **霧**是我們的管理人！你見過他了嗎？
-？！
-見過？但霧已經⋯⋯
+{Name}: ？！
+{Name}: 見過？但霧已經⋯⋯
 @char RB2.Eye4Mou2Body1 pos:50,-5
 彩虹: 你們要好好相處喔！
 @hide RB2
 ; rainbow disappear
-（彩虹跑走了。）
-（彩虹是⋯⋯不知道上一任管理人不在了嗎？）
-（——還是忘記了？）
-（給人的感覺意外的怪異。）
+彩虹跑走了。
+彩虹是⋯⋯不知道上一任管理人不在了嗎？
+——還是忘記了？
+給人的感覺意外的怪異。
 @stopBgm RainbowArea
 
 # MeetLightning
 @bgm LightningArea
-（接下來是閃電的區域。）
+接下來是閃電的區域。
 @back Building id:Image
 ; switch to lightning area
-（這裡看起來好熱鬧。）
-（是非常有科技感的區域。）
-@char NPC.Lightning1 pos:50,-5
-？: 你是？
-我是管理人。
-？: 有什麼事情嗎？
-我來做區域的日常確認。
-？: 如果你要找我們負責人的話，他現在在忙喔。
-？: 請之後有時間再過來吧。
-好的。
-@hide NPC
+這裡看起來好熱鬧。
+是非常有科技感的區域。
+@char Worker avatar:Lightning
+Worker: 你是？
+{Name}: 我是管理人。
+Worker: 有什麼事情嗎？
+{Name}: 我來做區域的日常確認。
+Worker: 如果你要找我們負責人的話，他現在在忙喔。
+Worker: 請之後有時間再過來吧。
+{Name}: 好的。
+@hide Worker
 @stopBgm LightningArea
 
 # MeetRainy
 @back Street id:Image
 @bgm RainArea
 @bgm SmallRain
-（最後回到這裡了。）
+最後回到這裡了。
 @addItem Unbrella
 @set AllowUnbrellaUsing=true
 
-（先撐個傘吧。）
+先撐個傘吧。
 @hidePrinter 
 @showUI Inventory
 @stop
@@ -189,21 +193,21 @@ Unknown: 開始工作吧。
 @set AllowUnbrellaUsing=false
 @back Street id:Image
 @printer Custom
-（這裡的天氣看起來還是不太穩定。）
-（雨天似乎依然沒有返回工作崗位。）
+這裡的天氣看起來還是不太穩定。
+雨天似乎依然沒有返回工作崗位。
 @char housekeeper pos:50,0
 管家: 您是管理人先生對吧？
 誒是，您好。
 管家: 我來幫主人買些東西，正巧遇到您。
 管家: 關於您昨天的造訪，招待不周真的是很不好意思。
-沒有的事。
-聽說雨天現在的狀況似乎很不好。
-請問您知道雨天發生什麼事了嗎？
+{Name}: 沒有的事。
+{Name}: 聽說雨天現在的狀況似乎很不好。
+{Name}: 請問您知道雨天發生什麼事了嗎？
 管家: ……
 管家: 我無法干涉主人的私事。
 管家: 不過主人的工作態度是很認真的，我想主人遇到了一些非常令人難過的事吧。
-我知道了。
-謝謝您。
+{Name}: 我知道了。
+{Name}: 謝謝您。
 管家: 辛苦您了。
 管家: 祝您工作順利。
 @hide housekeeper
@@ -213,18 +217,18 @@ Unknown: 開始工作吧。
 # OneEnd
 @back Home id:Image
 @bgm Home
-（雖然狀況比想像中的還要特殊，但總算是去完所有區域了。）
-（先把筆記整理起來。）
+雖然狀況比想像中的還要特殊，但總算是去完所有區域了。
+先把筆記整理起來。
 
 @showUI Note
 @addPage Day1
 
-（好了。）
-（目前天氣的個性都還沒有確認清楚。）
-（之後慢慢熟悉吧。）
+好了。
+目前天氣的個性都還沒有確認清楚。
+之後慢慢熟悉吧。
 @sfx Ringing
 ; ringing
-喂？
+{Name}: 喂？
 @char NPC.2 pos:50,0
 ？: 不好意思在凌晨叨擾您。我是管理局的職員。
 ？: 剛剛管理局這邊偵測到閃電區域似乎出現不正常供電現象。
