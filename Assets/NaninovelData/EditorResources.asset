@@ -395,6 +395,11 @@ MonoBehaviour:
     - name: R3
       pathPrefix: Characters
       guid: 2523047720e615446849eb9c44fb74ec
+  - Id: Characters/3a89af52-59f9-44b3-a331-231616c04d46
+    Resources:
+    - name: test
+      pathPrefix: Characters
+      guid: 
   - Id: TextPrinters/f99823ad-6e12-48ee-bfec-3c823bf47559
     Resources:
     - name: Tooltip
@@ -436,7 +441,7 @@ MonoBehaviour:
       guid: 17c685ba45d027c4abb4a277b87b9ac2
     - name: Street
       pathPrefix: Backgrounds/Image
-      guid: bd4b3be220a7c174d9b3c1019745b1be
+      guid: b2a1874cdff535e46aa39c88f6023c8d
     - name: Gallery
       pathPrefix: Backgrounds/Image
       guid: 6fb9b603b78e18e4183066cc4c4f4957
@@ -556,27 +561,30 @@ MonoBehaviour:
     - name: L3
       pathPrefix: Characters
       guid: d87dd807c15ecdb4289461dc4e7fe2f1
+  - Id: Characters/b48a3a56-7f31-4f9a-9e14-65e5a46774bc
+    Resources:
+    - name: 1
+      pathPrefix: Characters/asdf
+      guid: 4c9697ece340aa8419a81abb4f2c7aae
+  - Id: Characters/63f4c66e-1c58-4a43-b949-bfae20dfb804
+    Resources:
+    - name: a
+      pathPrefix: Characters/NPC
+      guid: 7392dc69ec0faee4ab9f2ace5269723e
+    - name: b
+      pathPrefix: Characters/NPC
+      guid: b8890d7716b72c444a52796c66293a5f
+    - name: c
+      pathPrefix: Characters/NPC
+      guid: 46e3aeb97ea8a1f459b621dc11789ce8
   - Id: Characters/8fc8f1b8-6a7e-43a6-9f1b-36e62f06add8
     Resources: []
   - Id: CharacterAvatars
-    Resources:
-    - name: Lightning
-      pathPrefix: CharacterAvatars
-      guid: 1c5ffad0621549c4e84e6f0234bce0f4
-    - name: Sup
-      pathPrefix: CharacterAvatars
-      guid: 326b4a098bb955c408e8c89b2150e811
+    Resources: []
   - Id: Characters/1f7c3a79-f7d9-45e1-98bb-a5fdbcefcfd4
     Resources:
-    - name: a
+    - name: "\u96E8\u5929_\u5F88\u591A\u5C45\u6C11"
       pathPrefix: Characters/ManyPeople
       guid: 409905a8b65e04145929540f1e7acc2f
   - Id: Characters/6818cd24-bab7-414f-812c-83d0f323f6f6
-    Resources: []
-  - Id: Characters/21cb603a-d4b5-4e2a-994e-3a6e64026272
-    Resources:
-    - name: a
-      pathPrefix: Characters/Interference
-      guid: 7392dc69ec0faee4ab9f2ace5269723e
-  - Id: Characters/33674134-dbdf-41db-96bc-5a9ac19dcefb
     Resources: []
