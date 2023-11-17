@@ -1,39 +1,33 @@
-# StillRainy
-@printer Wide
+#StillRainy
 @set Chapter="1-3"
 @showUI Inventory
 @addItem Unbrella
-@back Home id:Image
-今天早上接到了雨天區域淹水的消息。
-的確如果好幾天沒有處理這樣的大雨，很容易造成水災。
-@back Street id:Image
-要是有機會見到雨天就好了。
-先撐傘吧。
-@hidePrinter 
+@back Home ID:Image
+（今天早上接到了雨天區域淹水的消息。）
+（的確如果好幾天沒有處理這樣的大雨，很容易造成水災。）
+@back Street ID:Image
+（要是有機會見到雨天就好了。）
+（先撐傘吧。）
 @set AllowUnbrellaUsing=true
 @stop
 
-# ManyPeopleChap
-@printer Wide
-@back Street id:Image
-
-@char ManyPeople.a
-ManyPeople: 那邊那位！
+#ManyPeopleChap
+; 眼前出現很多居民
+@char NPC.ManyPeople
+居民: 那邊那位！
 ？
-ManyPeople: 您是政府的人對吧？
-ManyPeople: 附近凹陷的社區淹水了，您有辦法幫我們借一下抽水機嗎？
-ManyPeople: 已經有人去調了幾台，但還是不夠。
-@hide ManyPeople
+居民: 您是政府的人對吧？
+居民: 附近凹陷的社區淹水了，您有辦法幫我們借一下抽水機嗎？
+居民: 已經有人去調了幾台，但還是不夠。
 @sfx Ringing
 ; ringing
-{Name}: 喂？
-@char Unknown avatar:Sup
+喂？
 Unknown: 雨天區域還好嗎？
-{Name}: 不太好，水災有點嚴重。
-{Name}: 居民說需要多一點抽水機處理一個凹陷社區的問題。
+不太好，水災有點嚴重。
+居民說需要多一點抽水機處理一個凹陷社區的問題。
 Unknown: 好。
-{Name}: 我有幫你們聯絡了。
-{Name}: 抽水機等等就會送來。
+我有幫你們聯絡了。
+抽水機等等就會送來。
 Unknown: 感謝！
 
-# Home
+#Home

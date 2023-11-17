@@ -9,5 +9,4 @@
 # UseUnbrella
 @printer Custom
 @goto 1-1.MeetRainyCon if:(Chapter="1-1")&(AllowUnbrellaUsing=true)
-@goto 1-3.ManyPeopleChap if:(Chapter="1-3")&(AllowUnbrellaUsing=true)
 @stop
