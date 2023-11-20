@@ -86,14 +86,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5908502049949451077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b46b981bf4b65ce4c9bf04cedb35b789, type: 3}
+  m_Script: {fileID: 11500000, guid: ab5e52bc9116ac046af88c294580501c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: 
   scriptText1: '@set GivingItem="Bag"
 
     @goto DeterminationUseItem'
-  scriptText2: "@printer Dialogue\n@print \u73FE\u5728\u4E0D\u662F\u4F7F\u7528\u9053\u5177\u7684\u6642\u5019\n@wait
+  scriptText2: "@printer Wide\n@print \u73FE\u5728\u4E0D\u662F\u4F7F\u7528\u9053\u5177\u7684\u6642\u5019\n@wait
     0.5\n@hidePrinter"
   playOnAwake: 0
   disableWaitInput: 0

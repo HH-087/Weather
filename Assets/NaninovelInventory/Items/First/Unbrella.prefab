@@ -116,13 +116,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5908502049949451077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2e883c55871ddb4cb524194696c6ef5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c655db271df2664793fce77632648ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: 
-  scriptText1: "@hideUI Inventory\n@printer Dialogue\n@print (\u6490\u8D77\u4E86\u96E8\u5098)\n@goto
+  scriptText1: "@hideUI Inventory\n@printer Wide\n@print (\u6490\u8D77\u4E86\u96E8\u5098)\n@goto
     DeterminationUseItem.UseUnbrella"
-  scriptText2: "@printer Dialogue\n@print \u6211\u73FE\u5728\u4E0D\u9700\u8981\u6490\u5098"
+  scriptText2: "@printer Wide\n@print \u6211\u73FE\u5728\u4E0D\u9700\u8981\u6490\u5098"
   playOnAwake: 0
   disableWaitInput: 0
 --- !u!114 &2953648727480993848

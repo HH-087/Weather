@@ -201,6 +201,12 @@ MonoBehaviour:
     - name: Archives
       pathPrefix: UI
       guid: 455647e7abbf1db45964a18cecb5158d
+    - name: Switch
+      pathPrefix: UI
+      guid: c404fe9715d32ce4984797af0dc80837
+    - name: ConfidentialArchives
+      pathPrefix: UI
+      guid: 966e00d409a9ce24e86cb2853a32efcc
   - Id: Inventory
     Resources:
     - name: Armor
@@ -345,6 +351,12 @@ MonoBehaviour:
     - name: HeavyRain
       pathPrefix: Audio
       guid: 7285b19f1b1df654a9ab840c3cfcde21
+    - name: RainArea
+      pathPrefix: Audio
+      guid: 71adf0e907b664d4fa5ed549f9bfb4c7
+    - name: RainUnstable
+      pathPrefix: Audio
+      guid: c9a23742d536aba41aeb68945fe7b05e
     - name: Ringing
       pathPrefix: Audio
       guid: 00ee5bf0da556214db3ef470f86b42d1
@@ -360,21 +372,27 @@ MonoBehaviour:
     - name: RainbowArea
       pathPrefix: Audio
       guid: 26e497eac88ace143853f8873e333a25
+    - name: RainbowUnstable
+      pathPrefix: Audio
+      guid: 31d10c46e0fe2e347a8fa0e4604e9fdb
     - name: LightningArea
       pathPrefix: Audio
       guid: 47cc02514cb6d2b47913e7d73c9e9cc8
-    - name: RainArea
-      pathPrefix: Audio
-      guid: 71adf0e907b664d4fa5ed549f9bfb4c7
-    - name: LightningUnstable
-      pathPrefix: Audio
-      guid: 374fe44e70e25c44a9e6bba45fa7092e
     - name: LightningAlley
       pathPrefix: Audio
       guid: 8fd696c6538e17146bbfb9a14d9e606d
+    - name: LightningUnstable
+      pathPrefix: Audio
+      guid: 374fe44e70e25c44a9e6bba45fa7092e
     - name: Search
       pathPrefix: Audio
       guid: dbc21da5b0ea1cf4dbd2ccde6f8cb811
+    - name: BiFail
+      pathPrefix: Audio
+      guid: a646db05b6107884fb1df2c56244cff8
+    - name: BiSucc
+      pathPrefix: Audio
+      guid: cdd1361d0a0faeb429e72c693b28a00d
   - Id: Characters/8772482f-406a-499d-af53-af20dd7a4936
     Resources:
     - name: Rain
@@ -460,7 +478,7 @@ MonoBehaviour:
       guid: 6cde00b5aa2d33e4a882ca6093da3d3e
     - name: Building
       pathPrefix: Backgrounds/Image
-      guid: 5b0e97b8338ebd04fbb69d927e43534e
+      guid: 229f91a0c4708c44c9085cd9fde906dc
     - name: Alley
       pathPrefix: Backgrounds/Image
       guid: 394948bb92eb9f84eb693cc2e255a280
@@ -494,12 +512,30 @@ MonoBehaviour:
     - name: Home
       pathPrefix: Backgrounds/Image
       guid: 1e9087524ff789946be35c8958772ba1
-    - name: Authority
+    - name: AuthorityNight
       pathPrefix: Backgrounds/Image
       guid: 145497e473a3a6b4db351fbb87597a6d
     - name: Archives
       pathPrefix: Backgrounds/Image
       guid: 698afba0b83563645a5abeec9e35962d
+    - name: PublicArea
+      pathPrefix: Backgrounds/Image
+      guid: 69aae5bf82ece3e47b54ddf13272e3a0
+    - name: CloudHome
+      pathPrefix: Backgrounds/Image
+      guid: 6837bb54df6a9b24e9ada121595ed354
+    - name: PowerStation
+      pathPrefix: Backgrounds/Image
+      guid: f96800f944206ae4286a6ce8de6f06ae
+    - name: Controller
+      pathPrefix: Backgrounds/Image
+      guid: 96b358a87d4bbcc42b50e0ed160c9a30
+    - name: ConfidentialArchivesDoor
+      pathPrefix: Backgrounds/Image
+      guid: 99bd7df831859e64f83638ca8ece7b2f
+    - name: ConfidentialArchives
+      pathPrefix: Backgrounds/Image
+      guid: 2fc9ec7cd40cb1249ab415e018019aa2
   - Id: Characters/dc28c874-6674-4a44-8557-ee3e2cf36b45
     Resources:
     - name: C1

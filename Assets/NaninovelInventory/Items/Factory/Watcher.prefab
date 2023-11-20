@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptName: 
   scriptText: "@print \"\u7576\u4E0A\u7BA1\u7406\u4EBA\u5F8C\u62FF\u5230\u7684\u65B0\u540D\u724C\uFF0C\u57F7\u884C\u52E4\u52D9\u6642\u90FD\u5E36\u8457\u5B83\"
-    author:\u5DE5\u4F5C\u540D\u724C if:{arg} printer:Dialogue"
+    author:\u5DE5\u4F5C\u540D\u724C if:{arg} printer:Wide"
   playOnAwake: 0
   disableWaitInput: 0
 --- !u!114 &2953648727480993848

@@ -1,2 +1,80 @@
+#Enter
+; 轉換到夜晚的管理局
+@back AuthorityNight id:Image
+這次來看跟上任管理人有關的資料吧。
+@back ConfidentialArchivesDoor id:Image
+; 轉換場景到機密檔案室門前
+; 逼
+@sfx BiFail
+系統: 未擁有權限。
+？
+進不去嗎？
+系統: 請輸入密碼。
+#password
+要試什麼密碼呢？
+@choice “死亡的日期。” gosub:.Right
+@choice “上任管理人的編號。” gosub:.False
+@choice “管理局的門牌號碼。” gosub:.False
+@stop
 
+#False
+; 逼——
+@sfx BiFail
+看來不對。
+@gosub .password
+
+; return
+
+#Right
+; 逼逼！
+@sfx BiSucc
+打開了。
+@set ShelfCount=false
+@set DataCount=false
+@showUI ConfidentialArchives
+; 轉換場景到內部
+
+這裡看起來不像檔案室，反而像一般的辦公室？
+難道這裡是以前管理人工作的地方嗎？
+
+#Check
+
+
+@stop
+; 行動與文本
+; 點擊其中一個資料櫃
+
+#CheckShelf
+; 櫃子被打開
+這裡存放的是那個事件的資料。
+……
+
+資訊似乎都被模糊掉了。
+倒是能看清楚一些地方。
+死狀不正常？
+第一發現人為 天？
+是誰？
+@hidePrinter
+@stop 
+
+點擊桌上的物品
+#CheckDesk
+； 東西會歪掉
+（這是什麼？）
+（看起來像是一個手環。）
+; 手環上會有雨天的元素
+（是他留下來的東西嗎？）
+（拍個照記錄起來好了。）
+; 物品增加手環的照片：在疑似前任管理人桌上發現的東西。
+結束行動
+#Clean
+（清理所有痕跡吧。）
+
+點擊櫃子讓櫃子恢復原狀
+點擊物品讓物品恢復原狀
+
+（這樣就沒問題了。）
+
+點擊門即結束，如果在結束前點擊門：
+（必須把痕跡清理乾淨才能離開。）
 @stop

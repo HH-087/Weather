@@ -1,2 +1,180 @@
+#Off
+@gosub .Back
+;ringing
+@back Home id:Image
+@sfx Ringing
+@char Unknown avatar:Sup
+{Name}: 又停電？
+Unknown: 這次是陰天區域。
+{Name}: 陰天區域？
+Unknown: 陰天區域設有風力發電機。
+Unknown: 可能是天氣出問題了，要去確認一下。
+{Name}: 好的。
 
+#Cloudy
+@back CloudHome id:Image
+陰天看起來非常悠哉的躺在家門口
+陰天: ……
+陰天: 不是前幾天才來過嗎？
+{Name}: 巡查本來就是我的工作。
+陰天: ……
+陰天: 好吧。
+陰天: 巡查完就可以走了。
+……
+@choice “這裡的發電狀況有問題嗎？” gosub:.cloudyA
+@choice “工作要認真一點吧？” gosub:.cloudyB
+@stop
+; 這裡有新增flag
+
+#cloudyA
+陰天: 沒有啊？
+……
+{Name}: 沒有嗎？
+陰天: 怎麼會有問題？
+{Name}: 這裡的發電機是怎麼發電的？
+陰天: 風力啊。
+{Name}: 現在有風嗎？
+陰天: ……
+陰天: 這不是我能控制的。
+……
+陰天: 等我心情好的時候風就會來了。
+……
+陰天: 啊，風來了。
+……
+陰天: 怎麼了，問題有解決嗎？
+……
+陰天: 所以你也不知道是什麼問題嘛。
+……
+陰天: 你回去問問管理局怎麼辦吧。
+; ringing
+@sfx Ringing
+{Name}: 喂？
+Unknown: 陰天那裡是什麼狀況呢？
+{Name}: 不知道。
+Unknown: 但電力缺乏的狀況有點危急，可能要先去跟閃電借一下電。
+{Name}: 了解。
+@gosub .Lightning
+
+#cloudyB
+陰天: ……
+陰天: 就只會工作嗎？
+陰天: 你們眼裡沒有工作以外的東西了嗎？
+……
+陰天: 風不會來了。
+陰天: 你離開吧。
+; ringing
+@sfx Ringing
+{Name}: 喂？
+？: 陰天那裡是什麼狀況呢？
+{Name}: 不知道。
+？: 但電力缺乏的狀況有點危急，可能要先去跟閃電借一下電。
+{Name}: 了解。
+@set CloudLike+=-3
+@gosub .Lightning
+; 陰天厭惡flag +3
+
+#Lightning
+@back PublicArea id:Image
+; 閃電區域公共空間
+又來這裡了。
+閃電: ……
+閃電: 你為什麼又來了？
+閃電: 我現在沒空跟你——
+{Name}: 陰天區域緊急停電，你可以借一點電過去嗎？
+閃電: 啊？
+{Name}: 那邊似乎有緊急醫療在走，沒有電的話會出事的。
+閃電: ……
+閃電: 真麻煩。
+; 叮！
+閃電: 好了。
+？
+閃電: 持續三個小時應該夠吧。
+{Name}: 沒問題的。
+閃電: 沒事的話——
+{Name}: 你知道雨天發生了什麼事嗎？
+閃電: ……
+閃電: 問我幹嘛？
+{Name}: 雨天當時——
+閃電: 我不想聽。
+閃電: 不要讓我想到以前的事情。
+{Name}: 抱歉。
+閃電: 要不是那傢伙——
+？
+閃電: 你回去吧。
+……
+{Name}: 我也在了解過去。
+閃電: ……
+{Name}: 了解你們的過去和管理局的過去。
+{Name}: 對我來說這才能幫助我更好與你們相處。
+閃電: ……
+閃電: 你不需要這樣。
+閃電: 我們沒有必要跟管理人好好相處。
+; 閃電的意思是相處太緊密會太難過
+{Name}: 我明白了。
+{Name}: 有機會再跟你聊一聊吧。
+閃電: ……
+@gosub .Administration
+
+#Administration
+去確認一下陰天區域到底是什麼狀況。
+@back CloudHome id:Image
+@char Unknown avatar:Sup
+Unknown: 需要幫忙嗎？
+{Name}: 可以幫我確認一下陰天區域的發電狀況嗎？
+Unknown: 好的。
+
+Unknown: 似乎是跳電。
+？
+Unknown: 當下大量醫療用電器同時運行導致的。
+Unknown: 重新啟動發電機就可以了。
+{Name}: 了解。
+
+#Back
+陰天: ……
+陰天: 找到問題了嗎？
+{Name}: 跳電。
+陰天: ……
+陰天: 真無聊。
+{Name}: 我可以進去確認發電機嗎？
+陰天: 隨你便。
+@back PowerStation id:Image
+; 轉換場景
+
+把這個開關往上扳就可以了。
+@ShowUI Switch
+@hidePrinter
+@stop
+; 拖曳把手
+
+#Controller
+還是過載嗎？
+可能需要調節一下電流。
+嗯？
+@hideUI Switch
+@back Controller id:Image
+; 轉換畫面
+似乎只能調節電壓。
+應該把電壓調高還是調低呢？
+@choice “調高” gosub:.High
+@choice “調低” gosub:.Low
+@stop
+
+#Low
+不行，電流更大了。
+必須反過來。
+gosub:.High
+
+#High
+好了。
+電流降低了，應該沒問題了。
+; 轉換場景
+@back CloudHome id:Image
+陰天: 沒我的事了嗎？
+{Name}: 電力恢復了。
+{Name}: 不過你知道這裡為什麼突然有大量醫療用電嗎？
+陰天: ……
+陰天: 我不知道。
+{Name}: 好吧。
+
+@goto 1-4N
 @stop
