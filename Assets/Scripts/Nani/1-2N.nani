@@ -60,7 +60,6 @@
 
 
 #CheckRead
-
 @gosub .Clean if:(DataCount=true)&(ShelfCount=true)
 @hidePrinter
 @stop
@@ -78,6 +77,7 @@
 @stop
 
 #CleanEnd
+@set StartClean=false
 這樣就沒問題了。
 @hidePrinter
 @stop

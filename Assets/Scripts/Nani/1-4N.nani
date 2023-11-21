@@ -1,3 +1,4 @@
+@gosub .Right
 #Enter
 ; 轉換到夜晚的管理局
 @back AuthorityNight id:Image
@@ -31,6 +32,7 @@
 打開了。
 @set ShelfCount=false
 @set DataCount=false
+@set DoorOpening=false
 ; 轉換場景到內部
 
 這裡看起來不像檔案室，反而像一般的辦公室？
@@ -43,35 +45,55 @@
 
 #CheckShelf
 ; 櫃子被打開
+@if ShelfCount=false
 這裡存放的是那個事件的資料。
 ……
-
 資訊似乎都被模糊掉了。
 倒是能看清楚一些地方。
 死狀不正常？
 第一發現人為 天？
 是誰？
 @hidePrinter
+@set ShelfCount=true
+@elseif ShelfCount=true
+這個已經看過了
+
+@endif
+@gosub .CheckRead
 @stop 
 
 點擊桌上的物品
 #CheckDesk
-； 東西會歪掉
-（這是什麼？）
-（看起來像是一個手環。）
-; 手環上會有雨天的元素
-（是他留下來的東西嗎？）
-（拍個照記錄起來好了。）
-; 物品增加手環的照片：在疑似前任管理人桌上發現的東西。
+;東西會歪掉
+這是什麼？
+看起來像是一個手環。
+是他留下來的東西嗎？
+拍個照記錄起來好了。
+;物品增加手環的照片：在疑似前任管理人桌上發現的東西。
+@set DataCount=true
+@hidePrinter
+@gosub .CheckRead
+@stop
+
+#CheckRead
+@gosub .Clean if:(DataCount=true)&(ShelfCount=true)
+@hidePrinter
+@stop
+
 結束行動
 #Clean
-（清理所有痕跡吧。）
+需要的檔案應該都找到了。
+清理所有痕跡吧。
+@hidePrinter
+@set DataClean=false
+@set StartClean=true
 
-點擊櫃子讓櫃子恢復原狀
-點擊物品讓物品恢復原狀
+@stop
 
-（這樣就沒問題了。）
+#Clean
+這樣就沒問題了。
+走吧
 
-點擊門即結束，如果在結束前點擊門：
-（必須把痕跡清理乾淨才能離開。）
+;點擊門即結束，如果在結束前點擊門：
+;（必須把痕跡清理乾淨才能離開。）
 @stop
