@@ -22,6 +22,7 @@ Unknown: 開始工作吧。
 # MeetSunny
 @bgm SunnyArea
 @back FlowerField id:Image
+@spawn SunShafts params:0.5,10
 先從晴天的區域開始吧。
 這裡的產業一如往常充滿活力。
 ; sunny jump out
@@ -60,24 +61,23 @@ Unknown: 開始工作吧。
 @hide S3
 @char S1.Eye1Mou2Body2Blush pos:50,-10
 晴天: 不過啊，你知道雨天的狀況嗎？
-@hide S1
-@char S3.Eye2Mou2Body1Shadow1 pos:50,-6
+@char S1.111 pos:50,-10
 晴天: 他好像很久沒有上班了，不知道是不是心情受到什麼影響。
-@char S3.Eye1Mou4Body1Shadow1 pos:50,-6
+@char S1.112 pos:50,-10
 晴天: ……
-@hide S3
 @char S1.Eye1Mou2Body1Blush pos:50,-10
 晴天: 看來你還沒找過雨天呢。
-@hide S1
-@char S2.Eye2Mou1 pos:50,-7
+@char S1.113 pos:50,-10
 晴天: 記得去關心一下他喔。
-@hide S2
+@hide S1
+
 @stopBgm SunnyArea
 
 # MeetWindy
 @bgm CloudArea
 上次除了晴天跟雨天以外，沒有見到其他天氣。
 這次先去找陰天吧。
+@despawn SunShafts params:10
 @back Grassland id:Image
 ; switch to cloudy area
 ; cloudy appear
