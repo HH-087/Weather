@@ -61,18 +61,15 @@ Unknown: 開始工作吧。
 @hide S3
 @char S1.Eye1Mou2Body2Blush pos:50,-10
 晴天: 不過啊，你知道雨天的狀況嗎？
-@hide S1
-@char S3.Eye2Mou2Body1Shadow1 pos:50,-6
+@char S1.1-1-1 pos:50,-10
 晴天: 他好像很久沒有上班了，不知道是不是心情受到什麼影響。
-@char S3.Eye1Mou4Body1Shadow1 pos:50,-6
+@char S1.1-1-2 pos:50,-10
 晴天: ……
-@hide S3
 @char S1.Eye1Mou2Body1Blush pos:50,-10
 晴天: 看來你還沒找過雨天呢。
-@hide S1
-@char S2.Eye2Mou1 pos:50,-7
+@char S1.1-1-3 pos:50,-10
 晴天: 記得去關心一下他喔。
-@hide S2
+@hide S1
 @stopBgm SunnyArea
 
 # MeetWindy
