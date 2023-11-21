@@ -31,15 +31,12 @@
 打開了。
 @set ShelfCount=false
 @set DataCount=false
-@showUI ConfidentialArchives
 ; 轉換場景到內部
 
 這裡看起來不像檔案室，反而像一般的辦公室？
 難道這裡是以前管理人工作的地方嗎？
-
-#Check
-
-
+@hidePrinter
+@showUI ConfidentialArchives
 @stop
 ; 行動與文本
 ; 點擊其中一個資料櫃

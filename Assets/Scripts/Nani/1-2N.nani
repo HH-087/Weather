@@ -1,3 +1,6 @@
+@printer Wide
+@input Name summary:"輸入你的名字："
+@stop
 #Enter
 @set Chapter="1-2N"
 @back AuthorityNight id:Image

@@ -1,9 +1,8 @@
-@back FlowerField id:Image
+@back Black id:Image
 @set Chapter="1-1"
 @printer Wide
 @input Name summary:"輸入你的名字："
 @stop
-{Name}: 我叫做{Name}
 
 # BeforeDay
 @bgm Home
@@ -22,8 +21,8 @@ Unknown: 開始工作吧。
 
 # MeetSunny
 @bgm SunnyArea
-先從晴天的區域開始吧。
 @back FlowerField id:Image
+先從晴天的區域開始吧。
 這裡的產業一如往常充滿活力。
 ; sunny jump out
 @char S1.Eye6Mou1Body2Blush pos:50,-10
@@ -160,8 +159,8 @@ Unknown: 開始工作吧。
 
 # MeetLightning
 @bgm LightningArea
-接下來是閃電的區域。
 @back Building id:Image
+接下來是閃電的區域。
 ; switch to lightning area
 這裡看起來好熱鬧。
 是非常有科技感的區域。
@@ -192,7 +191,7 @@ Worker: 請之後有時間再過來吧。
 # MeetRainyCon
 @set AllowUnbrellaUsing=false
 @back Street id:Image
-@printer Custom
+@printer Wide
 這裡的天氣看起來還是不太穩定。
 雨天似乎依然沒有返回工作崗位。
 @char housekeeper pos:50,0
@@ -229,16 +228,16 @@ Worker: 請之後有時間再過來吧。
 @sfx Ringing
 ; ringing
 {Name}: 喂？
-@char NPC.2 pos:50,0
-？: 不好意思在凌晨叨擾您。我是管理局的職員。
-？: 剛剛管理局這邊偵測到閃電區域似乎出現不正常供電現象。
-？: 您有辦法現在去確認嗎？
+@char Unknown avatar:Sup
+Unknown: 不好意思在凌晨叨擾您。我是管理局的職員。
+Unknown: 剛剛管理局這邊偵測到閃電區域似乎出現不正常供電現象。
+Unknown: 您有辦法現在去確認嗎？
 明早再去確認可以嗎？
-？: 不瞞您說⋯⋯
-？: 管理局發現不正常現象後，就聯繫不到閃電區域的系統了。
-？: 應該是閃電區域某個部份發生了爆炸。
+Unknown: 不瞞您說⋯⋯
+Unknown: 管理局發現不正常現象後，就聯繫不到閃電區域的系統了。
+Unknown: 應該是閃電區域某個部份發生了爆炸。
 ？！
-？: 麻煩您現在去確認一下了。
+Unknown: 麻煩您現在去確認一下了。
 @hide NPC
 @goto 1-2
 @stop

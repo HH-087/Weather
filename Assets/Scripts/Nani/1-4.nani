@@ -1,5 +1,7 @@
+@printer Wide
+@input Name summary:"輸入你的名字："
+@stop
 #Off
-@gosub .Back
 ;ringing
 @back Home id:Image
 @sfx Ringing
@@ -65,18 +67,19 @@ Unknown: 但電力缺乏的狀況有點危急，可能要先去跟閃電借一�
 ; ringing
 @sfx Ringing
 {Name}: 喂？
-？: 陰天那裡是什麼狀況呢？
+Unknown: 陰天那裡是什麼狀況呢？
 {Name}: 不知道。
-？: 但電力缺乏的狀況有點危急，可能要先去跟閃電借一下電。
+Unknown: 但電力缺乏的狀況有點危急，可能要先去跟閃電借一下電。
 {Name}: 了解。
 @set CloudLike+=-3
 @gosub .Lightning
 ; 陰天厭惡flag +3
 
 #Lightning
-@back PublicArea id:Image
+@back Building id:Image
 ; 閃電區域公共空間
 又來這裡了。
+@back PublicArea id:Image
 閃電: ……
 閃電: 你為什麼又來了？
 閃電: 我現在沒空跟你——
@@ -130,6 +133,7 @@ Unknown: 重新啟動發電機就可以了。
 {Name}: 了解。
 
 #Back
+@back CloudHome id:Image
 陰天: ……
 陰天: 找到問題了嗎？
 {Name}: 跳電。
