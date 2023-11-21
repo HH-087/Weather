@@ -86,21 +86,18 @@ Unknown: 開始工作吧。
 陰天看起來非常沒有精神。
 是本來就這樣嗎？
 {Name}: 你好。
-@hide C2
-@char C3.Eye1Mou1Body2 pos:50,-3
+@char C2.hallo pos:48,-12
 陰天: ……
 {Name}: 我是新任的管理人，這裡的工作狀況還OK嗎？
-@hide C3
-@char C1.Eye2Mou2Body1 pos:51,-87
+@char C2.ok pos:48,-12
 陰天: ……
-@hide C1
 @char C2.Eye4Mou1Body1 pos:48,-12
 陰天: 什麼工作工作的不累嗎？
 @hide C2
 @char C1.Eye5Mou3Body1 pos:51,-87
 {Name}: ……
 @hide C1
-@char C3.Eye1Mou1Body1 pos:50,-3
+@char C3.akubi pos:50,-3
 陰天: 我睏了。
 {Name}: ……
 @char C3.Eye5Mou1Body1 pos:50,-3
@@ -116,11 +113,10 @@ Unknown: 開始工作吧。
 來到彩虹的區域了。
 這裡是非常熱鬧的遊樂區。
 ; rainbow jump out
-@char RB2.Eye1Mou1Body3 pos:50,-5
+@char RB1.teru pos:50,-80
 彩虹: ✧TERUTERU✧
 @spawn ShakeCamera params:,2,,,,,true,false
 ？！
-@hide RB2
 @char RB1.Eye1Mou1R2L1 pos:50,-80
 彩虹: 嗨嗨——☆我是彩虹！
 @char RB1.Eye1Mou3R1L1 pos:50,-80
@@ -143,15 +139,17 @@ Unknown: 開始工作吧。
 彩虹: 這是本來要送給**霧**的喔！
 {Name}: ！！霧是⋯⋯上一任管理人的代稱⋯⋯
 @hide RB3
-@char RB2.Eye5Mou1Body3 pos:50,-5
+@char RB1.meet pos:50,-80
 彩虹: **霧**是我們的管理人！你見過他了嗎？
 {Name}: ？！
 {Name}: 見過？但霧已經⋯⋯
-@char RB2.Eye4Mou2Body1 pos:50,-5
+@char RB1.bewell pos:50,-80
 彩虹: 你們要好好相處喔！
-@hide RB2
-; rainbow disappear
+
+@char RB1.bewell pos:130,-80
 彩虹跑走了。
+; rainbow disappear
+@hide RB1
 彩虹是⋯⋯不知道上一任管理人不在了嗎？
 ——還是忘記了？
 給人的感覺意外的怪異。
@@ -179,6 +177,7 @@ Worker: 請之後有時間再過來吧。
 @back Street id:Image
 @bgm RainArea
 @bgm SmallRain
+@spawn Rain params:1500,10
 最後回到這裡了。
 @addItem Unbrella
 @set AllowUnbrellaUsing=true
@@ -212,10 +211,11 @@ Worker: 請之後有時間再過來吧。
 @hide housekeeper
 @stopBgm RainArea
 @stopBgm SmallRain
+@despawn Rain params:30
 
 # OneEnd
 @back Home id:Image
-@bgm Home
+@bgm Home 
 雖然狀況比想像中的還要特殊，但總算是去完所有區域了。
 先把筆記整理起來。
 
