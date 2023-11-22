@@ -12,26 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
   m_Name: runtime.fadeMotionList
   m_EditorClassIdentifier: 
-  MotionInstanceIds: e8e0ffffc8e0ffffc0e0ffffa8e0ffffa0e0ffff98e0ffff58dcffff48dcffff18dcffff10dcffff08dcfffff0dbffffe8dbffff20d6ffff08d6fffff8d5fffff0d5ffffe8d5ffffc8e0ffff98e0ffff10dcffff58dcffff18dcffff08dcffffa8e0ffff48dcfffff0dbffffe8d5ffffa0e0ffffe8e0ffff08d6ffffc0e0fffff0d5ffffe8dbfffff8d5ffff20d6ffff
+  MotionInstanceIds: c8e0ffff98e0ffff10dcffff58dcffff18dcffff08dcffffa8e0ffff48dcfffff0dbffffe8d5ffffa0e0ffffe8e0ffff08d6ffffc0e0fffff0d5ffffe8dbfffff8d5ffff20d6ffff6a4afbff424afbff1a4afbff
   CubismFadeMotionObjects:
-  - {fileID: 11400000, guid: f778af6c6f3138547b02109cfe4b1e6e, type: 2}
-  - {fileID: 11400000, guid: 96fc26df9167e5742861a5823cee187d, type: 2}
-  - {fileID: 11400000, guid: d4c70250d68d89547b04f65810cd3fd9, type: 2}
-  - {fileID: 11400000, guid: b1a3113cd32727346980935c6d3edaa7, type: 2}
-  - {fileID: 11400000, guid: 994d576719669374f83bdcd6dcb8b742, type: 2}
-  - {fileID: 11400000, guid: fe62ffd3474d4d6438a8327dcbf0825c, type: 2}
-  - {fileID: 11400000, guid: c2d97175f7ef99544846198469283e79, type: 2}
-  - {fileID: 11400000, guid: 1e7319f83fec0fa4faa9590ac53d16ce, type: 2}
-  - {fileID: 11400000, guid: 68ae6b79377eb2f42ae38419a0b456f6, type: 2}
-  - {fileID: 11400000, guid: 283f1f5bfca3fe34fad96c580cefde10, type: 2}
-  - {fileID: 11400000, guid: 5b9fec490943d2c4aaf85065f0460fa3, type: 2}
-  - {fileID: 11400000, guid: a516b16f1b6e11545a8c76a32edb758c, type: 2}
-  - {fileID: 11400000, guid: ff1c2800a702b06449b40f1f306c1d9e, type: 2}
-  - {fileID: 11400000, guid: 3854d5288b6e326459c69560c1cf99c8, type: 2}
-  - {fileID: 11400000, guid: 8ced5c87604b00d458c25a6448774ddb, type: 2}
-  - {fileID: 11400000, guid: 76aee933bdc60bb4db17673b8e5aba20, type: 2}
-  - {fileID: 11400000, guid: 3b39fcf5e3889a840b50416f27e1b57c, type: 2}
-  - {fileID: 11400000, guid: 9697754c3076ffd4c9da0b1e7e2823a9, type: 2}
   - {fileID: 11400000, guid: 3ef42f90702741b4996c8aba6d135288, type: 2}
   - {fileID: 11400000, guid: 5f89189a4149cd84d904a5377b7c4c52, type: 2}
   - {fileID: 11400000, guid: d9d8c423fe5bec94c8dfe89cca40f844, type: 2}
@@ -50,3 +32,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 34e309d8899c5144f90ef95cab4978b7, type: 2}
   - {fileID: 11400000, guid: 965c726e5ad5556448e789eb8243fcb4, type: 2}
   - {fileID: 11400000, guid: 78cceda780e856b4385a3569fb07f1bd, type: 2}
+  - {fileID: 11400000, guid: 8e4dfb0d40a13464486cddf3fdc783a5, type: 2}
+  - {fileID: 11400000, guid: 4341cceba620d4643a9b01b7c79c4fd1, type: 2}
+  - {fileID: 11400000, guid: e3dc3dd790f07734bbd06490a375c1cf, type: 2}
