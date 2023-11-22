@@ -1,3 +1,4 @@
+@gosub.FindLightning 
 #Phone
 @back Home id:Image
 @char NPC.2 pos:50,0
@@ -255,10 +256,8 @@ Unknown: 您還是親自去現場看吧。
 @char L3.Eye4Mou1Eyebrow2Body4 pos:50,-34
 閃電: 我就是討厭你們這種地方。
 討不討厭是其他事，你不應該這樣對待你的工作。
-@hide L3
-@char L1.Eye1Eyebrow3 pos:50,-58
+@char L3.121 pos:50,-34
 閃電: 我怎麼對待我的工作你又知道了？
-@hide L1
 @char L3.Eye1Mou1Eyebrow2Body3 pos: 50,-34
 閃電: 你應該沒有愚蠢到連這裡的區域沒有受影響都沒發現吧？
 ……
@@ -276,16 +275,14 @@ Unknown: 您還是親自去現場看吧。
 閃電: ……
 @char L2.Eye4Mou1Eyebrow1 pos:50,-45
 閃電: 看你那麼斬釘截鐵，那我問問你，我影響到什麼了？
-@hide L2
-@char L1.Eye1Eyebrow3 pos:50,-58
+@char L2.122 pos:50,-45
 閃電: 我的區域？你真的有認真確認這裡發生什麼事嗎？
-@hide L1
+@hide L2
 @char L3.Eye1Mou1Eyebrow1Body2 pos:50,-34
 閃電: 這裡有停電嗎？科技有停擺嗎？訊號有被切斷嗎？
 @char L3.Eye4Mou1Eyebrow2Body2 pos:50,-34
 閃電: 有啦，我的確切斷了對管理局的訊號。
-@hide L3
-@char L2.Eye4Mou1Eyebrow4 pos:50,-45
+@char L3.123 pos:50,-34
 閃電: 你們的世界果然就只有管理局而已。
 ……
 ; 閃電消失
